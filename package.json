@@ -1,5 +1,6 @@
 {
   "name": "conrad-react",
+  "homepage": "http://conradarchitect.hipposoft.com.ar/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
