@@ -1,0 +1,22 @@
+@import "helpers.scss";
+
+//Colors
+$sections-background-color: #c4b6b6;
+$sections-border-color: #000;
+
+//Container sizes
+$form-container: 57%;
+
+$large-section-container: 1140px;
+
+//Devices sizes
+$xs-screen: 450px;
+$md-screen: 700px;
+$lg-screen: 1024px;
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  //src: url('../assets/fonts/OpenSans-Regular.ttf');
+}

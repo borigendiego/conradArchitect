@@ -1,0 +1,57 @@
+@import "../../css/variables";
+
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 60px 20px;
+  transition:all 0.3s ease-out;
+}
+
+.black-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-container {
+  border: solid;
+}
+
+.gallery-slide {
+  width: 30%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    transition: all 1s;
+  }
+
+  img:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+}
+
+img:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.gray-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $sections-background-color;
+  z-index: -1;
+}
+
+.all-projects-cta {
+  text-align: center;
+}

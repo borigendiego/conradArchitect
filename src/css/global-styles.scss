@@ -1,0 +1,10 @@
+@import "variables.scss";
+
+.black-border {
+  border: solid 2px $sections-border-color;
+}
+
+.large-section-container {
+  margin: auto;
+  width: $large-section-container;
+}

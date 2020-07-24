@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
+//Components
+import BannerSection from './components/banner/';
+import Projects from './components/projects';
+//css
+import './css/global-styles.scss';
 
 function App() {
   return (
     <div>
-      <h1>Conrad Architect website</h1>
+        <BannerSection />
+        <Projects />
     </div>
   );
 }

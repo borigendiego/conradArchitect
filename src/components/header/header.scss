@@ -1,0 +1,11 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 40%;
+}
