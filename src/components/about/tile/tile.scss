@@ -1,0 +1,30 @@
+@import "../../../css/variables";
+@import "../../../css/helpers";
+
+.tile-wrapper {
+  width: 35%;
+  position: relative;
+  padding: 10px 30px;
+}
+
+.tide-content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(0, #ffffff 74%, #00ffff00 50%);
+
+  img {
+    width: Rem(150px);
+    height: Rem(150px);
+  }
+}
+
+.border-overlay {
+  border: solid;
+  height: 90%;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 0;
+}

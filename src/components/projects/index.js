@@ -6,7 +6,7 @@ import './projects.scss';
 const Projects = () => {
     return (
         <div className={'projects-wrapper large-section-container'}>
-            <h1>Projects</h1>
+            <h1 className={'section-title'}>PROJECTS</h1>
             <Gallery />
         </div>
     )
