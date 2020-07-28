@@ -4,6 +4,7 @@ import './App.css';
 import BannerSection from './components/banner';
 import Projects from './components/projects';
 import About from './components/about';
+import Contact from './components/contact';
 //css
 import './css/global-styles.scss';
 
@@ -13,6 +14,7 @@ function App() {
         <BannerSection />
         <Projects />
         <About />
+        <Contact />
     </div>
   );
 }

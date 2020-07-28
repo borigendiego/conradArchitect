@@ -1,0 +1,19 @@
+@import "../../css/variables";
+
+.contact-container {
+  position: relative;
+  padding: 20px 0;
+}
+
+.contact-content {
+  background-color: $sections-background-color;
+}
+
+.contact-black-border {
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border: solid;
+}
