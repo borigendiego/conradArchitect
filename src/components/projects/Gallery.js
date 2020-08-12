@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Collapsible from 'react-collapsible';
+import {
+    Link
+} from "react-router-dom";
 //css
 import './gallery.scss';
 
@@ -19,9 +22,10 @@ const Gallery = () => {
                         <div
                             key={index}
                             className={'gallery-slide'}
-                            //style={{backgroundImage: 'url("http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg")'}}
                         >
-                            <img alt={'as'} src={'http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg'} />
+                            <Link to={'/projects'}>
+                                <img className={'gallery-image'} alt={'as'} src={'http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg'} />
+                            </Link>
                         </div>
                     )}
                 </div>

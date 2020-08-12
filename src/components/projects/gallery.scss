@@ -21,19 +21,19 @@
 .gallery-slide {
   width: 30%;
 
-  img {
+  .gallery-image {
     height: 100%;
     width: 100%;
     transition: all 1s;
   }
 
-  img:hover {
+  .gallery-image:hover {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
 }
 
-img:hover {
+.gallery-image:hover {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
