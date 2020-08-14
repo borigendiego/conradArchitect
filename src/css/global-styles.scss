@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 .black-border {
   border: solid 2px $sections-border-color;
 }

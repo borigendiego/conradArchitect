@@ -1,6 +1,7 @@
 @import "../../css/variables";
 
 .gallery-wrapper {
+  padding: 20px 0;
   position: relative;
   width: 100%;
 }
@@ -10,12 +11,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
-  padding: 60px 20px;
+  padding: 60px 0;
   transition:all 0.3s ease-out;
 }
 
 .gallery-container {
   border: solid;
+  margin: 20px 0;
 }
 
 .gallery-slide {
@@ -40,12 +42,21 @@
 
 .gray-background {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 100%;
-  background-color: $sections-background-color;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: grey;
   z-index: -1;
 }
 
 .all-projects-cta {
   text-align: center;
+}
+
+.gallery-overlay-helper {
+  width: 90%;
+  margin: auto;
 }
