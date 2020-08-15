@@ -1,7 +1,17 @@
 .banner-container {
-  background-color: grey;
   height: 800px;
-  padding: 40px 0;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .white-border {

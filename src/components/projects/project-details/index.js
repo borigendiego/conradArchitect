@@ -6,9 +6,6 @@ const ProjectDetails = () => {
     return (
         <div className={'project-details-container'}>
             <div className={'large-section-container details-wrapper'}>
-                {/*<div className={'project-details-black-border'} />*/}
-
-
                 <div className={'project-details-content'}>
                     <div className={'contenedor-img'}>
                         <div className="image-container">
