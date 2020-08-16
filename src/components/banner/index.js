@@ -8,11 +8,13 @@ import './banner.scss';
 const Banner = () => {
     return (
         <div className={'banner-container'}>
-            <div className={'carousel'}>
+            <div className={'carousel-container'}>
                 <Carousel/>
             </div>
-            <div className={'white-border large-section-container'}>
-                <Header />
+            <div className={'large-section-container banner-content-wrapper'}>
+                <div className={'white-border'}>
+                    <Header />
+                </div>
             </div>
         </div>
     )
