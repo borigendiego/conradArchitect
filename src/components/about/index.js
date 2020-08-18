@@ -29,7 +29,7 @@ const About = () => {
     ];
 
     return (
-        <div className={'large-section-container'}>
+        <div className={'large-section-container about-section-wrapper'}>
             <h1 className={'section-title'}>ABOUT</h1>
             <div className={'tile-container'}>
                 {mockData.map((value, index) => <Tide staffData={value}/>)}

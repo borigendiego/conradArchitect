@@ -1,7 +1,6 @@
 @import "../../css/variables";
 
 .gallery-wrapper {
-  padding: 20px 0;
   position: relative;
   width: 100%;
 }
@@ -48,7 +47,7 @@
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  background-color: grey;
+  background-color: $sections-background-color;
   z-index: -1;
 }
 
