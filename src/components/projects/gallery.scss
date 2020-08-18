@@ -1,10 +1,5 @@
 @import "../../css/variables";
 
-.gallery-wrapper {
-  position: relative;
-  width: 100%;
-}
-
 .images-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -12,11 +7,6 @@
   margin: 20px 0;
   padding: 60px 0;
   transition:all 0.3s ease-out;
-}
-
-.gallery-container {
-  border: solid;
-  margin: 20px 0;
 }
 
 .gallery-slide {
@@ -37,18 +27,6 @@
 .gallery-image:hover {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-}
-
-.gray-background {
-  position: absolute;
-  width: 90%;
-  height: 100%;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: $sections-background-color;
-  z-index: -1;
 }
 
 .all-projects-cta {
