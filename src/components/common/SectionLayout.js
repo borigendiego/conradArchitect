@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './sectionLayout.scss';
 
 const SectionLayout = (props) => {
@@ -19,4 +20,8 @@ const SectionLayout = (props) => {
     )
 };
 
-export default SectionLayout
+SectionLayout.prototypes = {
+  sectionTitle: PropTypes.string,
+};
+
+export default SectionLayout;

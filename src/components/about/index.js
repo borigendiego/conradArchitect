@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.scss';
 //Components
+import SectionLayout from '../common/SectionLayout';
 import Tide from './tile';
 
 const About = () => {
@@ -29,12 +30,11 @@ const About = () => {
     ];
 
     return (
-        <div className={'large-section-container about-section-wrapper'}>
-            <h1 className={'section-title'}>ABOUT</h1>
+        <SectionLayout sectionTitle={'ABOUT'}>
             <div className={'tile-container'}>
                 {mockData.map((value, index) => <Tide staffData={value}/>)}
             </div>
-        </div>
+        </SectionLayout>
     )
 };
 

@@ -6,7 +6,6 @@ const Tile = (props) => {
 
     return (
         <div className={'tile-wrapper'}>
-            <div className={'border-overlay'} />
             <div className={'tide-content-wrapper'}>
                 <img src={profilePicture} />
                 <h4>{`${name} ${lastName}`}</h4>
