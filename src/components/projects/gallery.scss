@@ -4,36 +4,44 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0;
-  padding: 60px 0;
+  margin: Rem(20px) 0;
+  padding-top: Rem(60px);
   transition:all 0.3s ease-out;
 }
 
 .gallery-slide {
+  margin-bottom: Rem(40px);
+  height: Rem(300px);
   width: 30%;
 
   .gallery-image {
     height: 100%;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
     transition: all 1s;
   }
 
   .gallery-image:hover {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
   }
-}
-
-.gallery-image:hover {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 .all-projects-cta {
   text-align: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .gallery-overlay-helper {
   width: 90%;
   margin: auto;
+}
+
+.expandedPanel {
+  display: flex;
+  flex-direction: column-reverse;
 }
