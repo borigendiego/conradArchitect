@@ -4,7 +4,7 @@
 .tile-wrapper {
   width: 50%;
   position: relative;
-  padding: 10px 30px;
+  padding: Rem(10px) Rem(50px);
 }
 
 .tide-content-wrapper {
@@ -14,7 +14,7 @@
   background: linear-gradient(0, #ffffff 74%, #00ffff00 50%);
 
   img {
-    width: Rem(150px);
-    height: Rem(150px);
+    width: Rem(200px);
+    height: Rem(200px);
   }
 }

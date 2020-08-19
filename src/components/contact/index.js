@@ -7,9 +7,8 @@ const Contact = () => {
         <SectionLayout sectionTitle={'CONTACT'}>
             <div className={'contact-content'}>
                 <p>mail@mail.com</p>
-                <p>(000) 123456789</p>
-                <p>Test test test test</p>
-                <p>Test test test test</p>
+                <p>949 233-8625</p>
+                <p>1550 S. Coast Hwy. #201 Laguna Beach, CA 92651</p>
             </div>
         </SectionLayout>
     )

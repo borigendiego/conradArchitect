@@ -7,26 +7,26 @@ import Tide from './tile';
 const About = () => {
     const mockData = [
         {
-            name: 'Diego',
-            lastName: 'Test',
-            rol: 'archi',
-            description: 'asdsada sdasd',
+            name: 'Jim',
+            lastName: 'Conrad',
+            rol: 'Architect - Founder',
+            description: 'Short description',
             profilePicture: 'http://conradarchitect.com/wp-content/uploads/2014/09/h2f2004.jpg',
         },
         {
-            name: 'Diego',
-            lastName: 'Test2',
-            rol: 'archi',
-            description: 'asdsada 22222',
-            profilePicture: 'http://conradarchitect.com/wp-content/uploads/2014/09/h2f2004.jpg',
+            name: 'Maureen',
+            lastName: 'Scally',
+            rol: 'Architect - Associate',
+            description: 'Short description',
+            profilePicture: 'http://conradarchitect.com/wp-content/uploads/2020/08/maureen_profile.jpg',
         },
         {
-            name: 'Diego',
-            lastName: 'Test3',
-            rol: 'archi',
-            description: 'asdsada 3333',
+            name: 'Jim',
+            lastName: 'Conrad',
+            rol: 'Architect - Founder',
+            description: 'Short description',
             profilePicture: 'http://conradarchitect.com/wp-content/uploads/2014/09/h2f2004.jpg',
-        }
+        },
     ];
 
     return (
