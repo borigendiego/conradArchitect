@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div className={'header-wrapper'}>
             <div>
-                <img className="image-grey" src={Logo} />
+                <img alt={'logo'} className="image-grey" src={Logo} />
             </div>
             <ul className={'nav-menu'}>
                 <li>HOME</li>

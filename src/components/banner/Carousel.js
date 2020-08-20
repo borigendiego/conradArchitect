@@ -13,15 +13,15 @@ const MyCarousel = () => {
                 showArrows={false}
             >
                 <div>
-                    <img className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
+                    <img alt={'first'} className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
                     <p className="legend">Legend 1</p>
                 </div>
                 <div>
-                    <img className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
+                    <img alt={'second'} className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
+                    <img alt={'third'} className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
                     <p className="legend">Legend 3</p>
                 </div>
             </Carousel>

@@ -9,7 +9,7 @@ const ProjectDetails = () => {
                 <div className={'project-details-content'}>
                     <div className={'contenedor-img'}>
                         <div className="image-container">
-                            <img className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
+                            <img alt={'main'} className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
                         </div>
                     </div>
                     <div className={'details-container'}>

@@ -32,7 +32,7 @@ const About = () => {
     return (
         <SectionLayout sectionTitle={'ABOUT'}>
             <div className={'tile-container'}>
-                {mockData.map((value, index) => <Tide staffData={value}/>)}
+                {mockData.map((value, index) => <Tide staffData={value} key={index} />)}
             </div>
         </SectionLayout>
     )

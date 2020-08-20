@@ -29,13 +29,10 @@ const Gallery = () => {
             </div>
             <Collapsible
                 trigger={
-                <a
-                    onClick={() => {
-                        setIsExpanded(!isExpanded)
-                    }}
-                >
-                    <h2 className={'all-projects-cta'}>{isExpanded ? 'SEE LESS' : 'SEE ALL PROJECTS'}</h2>
-                </a>
+                    <h2
+                        onClick={() => {setIsExpanded(!isExpanded)}}
+                        className={'all-projects-cta'}>{isExpanded ? 'SEE LESS' : 'SEE ALL PROJECTS'}
+                    </h2>
                 }
                 classParentString={isExpanded ? 'expandedPanel' : ''}
             >
