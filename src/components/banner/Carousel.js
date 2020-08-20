@@ -12,17 +12,15 @@ const MyCarousel = () => {
                 showThumbs={false}
                 showArrows={false}
             >
+                {/*<div className={'carousel-image'} style={{backgroundImage: 'url(http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg)'}}></div>*/}
                 <div>
-                    <img alt={'first'} className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
-                    <p className="legend">Legend 1</p>
+                    <img alt={'first'} src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
                 </div>
                 <div>
-                    <img alt={'second'} className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
-                    <p className="legend">Legend 2</p>
+                    <img alt={'second'} src="http://conradarchitect.com/wp-content/uploads/2014/09/second.jpg"/>
                 </div>
                 <div>
-                    <img alt={'third'} className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
-                    <p className="legend">Legend 3</p>
+                    <img alt={'third'} src="http://conradarchitect.com/wp-content/uploads/2014/09/sixth.jpg"/>
                 </div>
             </Carousel>
         </div>

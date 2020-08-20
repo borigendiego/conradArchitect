@@ -8,9 +8,11 @@ const Tile = (props) => {
         <div className={'tile-wrapper'}>
             <div className={'tide-content-wrapper'}>
                 <img alt={`${key}-profile`} src={profilePicture} />
-                <h4>{`${name} ${lastName}`}</h4>
-                <h5>{rol}</h5>
-                <p>{description}</p>
+                <div className={'text-wrapper'}>
+                    <h4 className={'tile-text'}>{`${name} ${lastName}`}</h4>
+                    <h4 className={'tile-text'}>{rol}</h4>
+                    <h4 className={'tile-text'}>{description}</h4>
+                </div>
             </div>
         </div>
     )

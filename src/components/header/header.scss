@@ -1,3 +1,5 @@
+@import "../../css/variables";
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -10,6 +12,10 @@
   justify-content: space-around;
   width: 40%;
   color: white;
+
+  li {
+    font-family: $title-font-family;
+  }
 
   li:hover {
     text-decoration: underline;

@@ -30,6 +30,8 @@
 
 .all-projects-cta {
   text-align: center;
+  font-family: $title-font-family;
+  font-size: Rem(25px);
 
   &:hover {
     text-decoration: underline;

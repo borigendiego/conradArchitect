@@ -4,7 +4,8 @@
 .tile-wrapper {
   width: 50%;
   position: relative;
-  padding: Rem(10px) Rem(50px);
+  padding: Rem(10px) Rem(70px);
+  margin-bottom: Rem(50px);
 }
 
 .tide-content-wrapper {
@@ -17,4 +18,13 @@
     width: Rem(200px);
     height: Rem(200px);
   }
+}
+
+.text-wrapper {
+  width: Rem(200px);
+  margin-bottom: Rem(30px);
+}
+
+.tile-text {
+  font-family: $text-font-family;
 }
