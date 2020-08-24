@@ -2,7 +2,7 @@
 @import "../../../css/helpers";
 
 .project-details-container {
-  background: linear-gradient(90deg, $sections-background-color 30%, #00ffff00 30%);
+  background: linear-gradient(90deg, $sections-background-color 33%, #00ffff00 30%);
   height: 100vh;
   padding: Rem(50px) Rem(100px);
 }
@@ -23,15 +23,14 @@
   position:relative;
   width: 60%;
 }
-/*
 .image-grey {
   display:block;
   -webkit-filter: grayscale(100%);
   max-width: 100%;
   height: auto;
-}*/
+}
 
-/*.image-container:after {
+.image-container:after {
   position:absolute;
   content:"";
   top:0;
@@ -41,7 +40,7 @@
   background-image:url(http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg);
   background-position:top right;
   background-size: cover;
-}*/
+}
 
 
 .details-content {
@@ -89,7 +88,17 @@ img {
   }
 }
 
+.ReactGridGallery_tile {
+  width: 30%;
+}
+
 .ReactGridGallery_tile-viewport {
-  height: 100px !important;
-  width: 100px !important;
+  height: Rem(120px) !important;
+  width: 100% !important;
+
+  img {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
 }
