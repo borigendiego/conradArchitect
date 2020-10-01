@@ -36,7 +36,7 @@ const Gallery = () => {
                 }
                 classParentString={isExpanded ? 'expandedPanel' : ''}
             >
-                <div className={'images-wrapper'}>
+                <div className={'more-images-wrapper'}>
                     {fullProjects.map((image, index) =>
                         <div
                             key={index}

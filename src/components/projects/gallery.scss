@@ -4,8 +4,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: Rem(20px) 0;
   padding-top: Rem(60px);
+  transition:all 0.3s ease-out;
+}
+
+.more-images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   transition:all 0.3s ease-out;
 }
 

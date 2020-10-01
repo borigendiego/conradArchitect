@@ -11,7 +11,7 @@ const Banner = () => {
             <div className={'carousel-container'}>
                 <Carousel/>
             </div>
-            <div className={'large-section-container banner-content-wrapper'}>
+            <div className={'banner-content-wrapper'}>
                 <div className={'white-border'}>
                     <Header />
                 </div>
