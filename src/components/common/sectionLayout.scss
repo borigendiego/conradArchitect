@@ -1,12 +1,5 @@
 @import "../../css/variables";
 
-.section-container {
-  display: flex;
-  flex-direction: column;
-  margin: Rem(40px) auto;
-  width: $large-section-container;
-}
-
 .section-content-wrapper {
   position: relative;
   width: 100%;
