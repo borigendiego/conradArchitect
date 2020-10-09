@@ -8,7 +8,7 @@ const Contact = () => {
             <div className={'contact-content'}>
                 <p>jconradarc@gmail.com</p>
                 <p>949 233-8625</p>
-                <p>1550 S. Coast Hwy. #201 Laguna Beach, CA 92651</p>
+                <p>1550 S. Coast Hwy. #201 Laguna Beach, CA 926yae51</p>
             </div>
         </SectionLayout>
     )
