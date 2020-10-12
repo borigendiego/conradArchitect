@@ -105,11 +105,12 @@ img {
 
 .project-details-back-arrow {
   font-family: $title-font-family;
-  font-size: Rem(20px);
+  font-size: Rem(22px);
   position: relative;
   bottom: Rem(40px);
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 .project-details-back-arrow:hover{
   text-decoration: underline;

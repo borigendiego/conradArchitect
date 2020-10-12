@@ -3,13 +3,18 @@ import React from 'react';
 import './project-details.scss';
 //Components
 import Gallery from './DetailsGallery';
+import {
+    Link
+} from 'react-router-dom';
 const ProjectDetails = () => {
 
     return (
         <div className={'project-details-container'}>
             <div className={'project-details-wrapper'}>
                 <div>
-                    <a className={'project-details-back-arrow'} href={'#home'}>&#8249; MAIN PAGE</a>
+                    <Link to={'/'} className={'project-details-back-arrow'}>
+                        <a>&#8249; MAIN PAGE</a>
+                    </Link>
                     <div className={'details-content'}>
 
                         <div className="image-container">
