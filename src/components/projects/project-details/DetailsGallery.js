@@ -6,23 +6,23 @@ const DetailsGallery = () => {
 
     const IMAGES =
         [{
-            src: "http://conradarchitect.com/wp-content/uploads/2014/09/fourth.jpg",
-            thumbnail: "http://conradarchitect.com/wp-content/uploads/2014/09/fourth.jpg",
+            src: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-4.jpg",
+            thumbnail: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-4.jpg",
             thumbnailWidth: 150,
             thumbnailHeight: 150,
             caption: "Picture 1"
         },
         {
-            src: "http://conradarchitect.com/wp-content/uploads/2014/09/fist-photo.jpg",
-            thumbnail: "http://conradarchitect.com/wp-content/uploads/2014/09/fist-photo.jpg",
+            src: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-2.jpg",
+            thumbnail: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-2.jpg",
             thumbnailWidth: 150,
             thumbnailHeight: 150,
             caption: "Picture 2"
         },
 
         {
-            src: "http://conradarchitect.com/wp-content/uploads/2014/09/second.jpg",
-            thumbnail: "http://conradarchitect.com/wp-content/uploads/2014/09/second.jpg",
+            src: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-1.jpg",
+            thumbnail: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-1.jpg",
             thumbnailWidth: 150,
             thumbnailHeight: 150,
             caption: "Picture 3"

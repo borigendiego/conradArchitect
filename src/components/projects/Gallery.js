@@ -22,7 +22,7 @@ const Gallery = () => {
                         className={'gallery-slide'}
                     >
                         <Link to={'/projects'}>
-                            <img className={'gallery-image'} alt={'as'} src={'http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg'} />
+                            <img className={'gallery-image'} alt={'as'} src={'https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-4.jpg'} />
                         </Link>
                     </div>
                 )}
@@ -43,7 +43,7 @@ const Gallery = () => {
                             className={'gallery-slide more-slides'}
                         >
                             <Link to={'/projects'}>
-                                <img className={'gallery-image'} alt={'as'} src={'http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg'} />
+                                <img className={'gallery-image'} alt={'as'} src={'https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-4.jpg'} />
                             </Link>
                         </div>
                     )}

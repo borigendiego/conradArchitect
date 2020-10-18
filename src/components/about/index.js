@@ -11,21 +11,21 @@ const About = () => {
             lastName: 'Conrad',
             rol: 'Architect - Founder',
             description: 'Short description',
-            profilePicture: 'http://conradarchitect.com/wp-content/uploads/2014/09/h2f2004.jpg',
+            profilePicture: 'https://wp.thehipposoft.com/wp-content/uploads/2020/10/people-placeholder.jpg',
         },
         {
             name: 'Maureen',
             lastName: 'Scally',
             rol: 'Architect - Associate',
             description: 'Short description',
-            profilePicture: 'http://conradarchitect.com/wp-content/uploads/2020/08/maureen_profile.jpg',
+            profilePicture: 'https://wp.thehipposoft.com/wp-content/uploads/2020/10/maureen_profile.jpg',
         },
         {
             name: 'Jim',
             lastName: 'Conrad',
             rol: 'Architect - Founder',
             description: 'Short description',
-            profilePicture: 'http://conradarchitect.com/wp-content/uploads/2014/09/h2f2004.jpg',
+            profilePicture: 'https://wp.thehipposoft.com/wp-content/uploads/2020/10/people-placeholder.jpg',
         },
     ];
 

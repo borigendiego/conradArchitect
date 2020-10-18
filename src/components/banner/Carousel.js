@@ -14,13 +14,13 @@ const MyCarousel = () => {
             >
                 {/*<div className={'carousel-image'} style={{backgroundImage: 'url(http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg)'}}></div>*/}
                 <div>
-                    <img alt={'first'} src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
+                    <img alt={'first'} src={'https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-1.jpg'} />
                 </div>
                 <div>
-                    <img alt={'second'} src="http://conradarchitect.com/wp-content/uploads/2014/09/second.jpg"/>
+                    <img alt={'second'} src={'https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-2.jpg'} />
                 </div>
                 <div>
-                    <img alt={'third'} src="http://conradarchitect.com/wp-content/uploads/2014/09/sixth.jpg"/>
+                    <img alt={'third'} src={'https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-3.jpg'} />
                 </div>
             </Carousel>
         </div>

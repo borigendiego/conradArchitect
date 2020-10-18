@@ -18,7 +18,11 @@ const ProjectDetails = () => {
                     <div className={'details-content'}>
 
                         <div className="image-container">
-                            <img alt={'main'} className="image-grey" src="http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg"/>
+                            <img
+                                alt={'main'}
+                                className={'image-grey'}
+                                src={'https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-2.jpg'}
+                            />
                         </div>
                         <div className={'details-container'}>
                             <div>
