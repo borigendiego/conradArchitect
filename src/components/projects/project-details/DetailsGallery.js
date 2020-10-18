@@ -3,7 +3,6 @@ import React from 'react';
 import Gallery from 'react-grid-gallery';
 
 const DetailsGallery = () => {
-
     const IMAGES =
         [{
             src: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-4.jpg",

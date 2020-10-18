@@ -31,7 +31,9 @@ const Gallery = () => {
                 trigger={
                     <h2
                         onClick={() => {setIsExpanded(!isExpanded)}}
-                        className={'all-projects-cta'}>{isExpanded ? 'SEE LESS >' : 'SEE ALL PROJECTS >'}
+                        className={'all-projects-cta'}
+                    >
+                        {isExpanded ? 'SEE LESS >' : 'SEE ALL PROJECTS >'}
                     </h2>
                 }
                 classParentString={isExpanded ? 'expandedPanel' : ''}

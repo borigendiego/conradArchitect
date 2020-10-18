@@ -13,7 +13,7 @@ const ProjectDetails = () => {
             <div className={'project-details-wrapper'}>
                 <div>
                     <Link to={'/'} className={'project-details-back-arrow'}>
-                        <a>&#8249; MAIN PAGE</a>
+                        <span>&#8249; MAIN PAGE</span>
                     </Link>
                     <div className={'details-content'}>
 
