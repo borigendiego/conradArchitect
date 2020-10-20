@@ -7,10 +7,13 @@
 
 .contact-content {
   background-color: $sections-background-color;
+  margin: 1rem 0;
 
-  p {
+  .contact-item {
     text-align: center;
     font-family: $text-font-family;
+    font-size: 1.5rem;
+    padding: 0.7rem 0;
   }
 }
 

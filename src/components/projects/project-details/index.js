@@ -27,11 +27,13 @@ const ProjectDetails = () => {
                         <div className={'details-container'}>
                             <div>
                                 <h1>RESIDENCE</h1>
-                                <h3>Location: Buenos Aires, Argentina</h3>
-                                <h3>Size: 1200m2</h3>
-                                <h3>Year: 2010</h3>
-                                <h3>Status: Built</h3>
-                                <h3>Services: Architecture</h3>
+                                <div className={'details-container-description'}>
+                                    <h3 className={'details-item'}>Location: Buenos Aires, Argentina</h3>
+                                    <h3 className={'details-item'}>Size: 1200m2</h3>
+                                    <h3 className={'details-item'}>Year: 2010</h3>
+                                    <h3 className={'details-item'}>Status: Built</h3>
+                                    <h3 className={'details-item'}>Services: Architectural design</h3>
+                                </div>
                             </div>
                             <div className={'gallery'}>
                                 <Gallery />

@@ -22,9 +22,25 @@
 
 .text-wrapper {
   width: Rem(200px);
-  margin-bottom: Rem(30px);
+  margin-bottom: Rem(25px);
+  margin-top: Rem(30px);
+  font-family: $text-font-family;
 }
 
+.tile-name-text {
+  padding: 0.3rem 0;
+}
 .tile-text {
-  font-family: $text-font-family;
+  padding: 0.3rem 0;
+}
+.tile-full-profile {
+  @extend .text-wrapper;
+  margin: 1rem 0 3rem 0;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

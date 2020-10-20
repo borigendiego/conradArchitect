@@ -115,3 +115,11 @@ img {
 .project-details-back-arrow:hover{
   text-decoration: underline;
 }
+.details-container-description{
+  margin-top: 2rem;
+  font-family: Arial sans-serif;
+
+  .details-item {
+    margin: 1rem 0;
+  }
+}
