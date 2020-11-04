@@ -13,9 +13,7 @@
   width: 40%;
   color: white;
 
-  li {
-    font-family: $title-font-family;
-  }
+  li { font-family: $title-font-family; }
 
   li:hover {
     text-decoration: underline;
@@ -30,5 +28,9 @@
 
   .header-wrapper {
     flex-direction: column-reverse;
+  }
+
+  .banner-logo {
+    margin-top: 30%;
   }
 }

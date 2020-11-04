@@ -11,7 +11,7 @@ const Header = () => {
         <nav role={'navigation'}>
             <div className={'header-wrapper'}>
                 <div>
-                    <img alt={'logo'} className="image-grey" src={Logo} />
+                    <img alt={'logo'} className={'banner-logo'} src={Logo} />
                 </div>
                 <ul id={'big-screen-menu'} className={'nav-menu'}>
                     <li>HOME</li>

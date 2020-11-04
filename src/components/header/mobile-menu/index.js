@@ -6,9 +6,9 @@ const MobileMenu = () => {
     return (
         <div id={'menuToggle'}>
             <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
+            <span />
+            <span />
+            <span />
             <ul id="menu">
                 <a href={'#home'}><li>Home</li></a>
                 <a href={'#home'}><li>About</li></a>
