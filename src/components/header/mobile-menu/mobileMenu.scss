@@ -1,11 +1,10 @@
 @import '../../../css/variables';
 
+#menuToggle {
+  display: none;
+}
+
 @media (max-width: $xs-screen) {
-  #menuToggle {
-    display: none;
-  }
-
-
   #menuToggle
   {
     display: block;
