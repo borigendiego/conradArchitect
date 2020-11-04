@@ -4,7 +4,7 @@
 
 .banner-content-wrapper {
   height: 100%;
-  padding: 40px 80px;
+  padding: 3% 5%;
   position: relative;
   z-index: 2;
   margin: auto;
@@ -37,6 +37,19 @@
 
   .carousel-root {
     height: 100%;
+  }
+
+  .slider-wrapper {
+    height: 100%;
+
+    .slider {
+      height: 100vh;
+      max-height: 100vh;
+
+      li {
+        img { height: 100vh; }
+      }
+    }
   }
 }
 
