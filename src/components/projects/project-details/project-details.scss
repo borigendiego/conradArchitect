@@ -2,14 +2,13 @@
 @import "../../../css/helpers";
 
 .project-details-container {
-  background: linear-gradient(90deg, $sections-background-color 33%, #00ffff00 30%);
+  background: linear-gradient(90deg, $sections-background-color 32%, #00ffff00 32%);
   height: 100vh;
-  padding: Rem(50px) Rem(100px);
+  padding: 4% 5%;
 }
 
 .details-wrapper {
   position: relative;
-
 }
 
 .project-details-content {
@@ -27,17 +26,17 @@
   display:block;
   -webkit-filter: grayscale(100%);
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .image-container:after {
   position:absolute;
-  content:"";
+  content: "";
   top:0;
   left:50%;
   width:50%;
   height:100%;
-  background-image:url(http://conradarchitect.com/wp-content/uploads/2014/09/third.jpg);
+  background-image:url(https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-2.jpg);
   background-position:top right;
   background-size: cover;
 }
@@ -52,7 +51,7 @@
 
 .project-details-wrapper {
   position: relative;
-  padding: Rem(50px) 0;
+  padding: 3% 0;
 }
 
 img {
@@ -73,18 +72,18 @@ img {
 .details-container {
   display: flex;
   flex-direction: column;
-  padding: Rem(10px) Rem(50px);
+  padding: 1% 4%;
   width: 40%;
   justify-content: space-between;
 
   h1 {
     font-family: $title-font-family;
-    font-size: Rem(30px);
+    font-size: clamp(100%, 8vw, 45px);
   }
 
   h3 {
     font-family: $text-font-family;
-    font-size: Rem(16px);
+    font-size: clamp(100%, 2vw, 16px);
   }
 }
 
@@ -112,14 +111,48 @@ img {
   text-decoration: none;
   font-weight: bold;
 }
+
 .project-details-back-arrow:hover{
   text-decoration: underline;
 }
+
 .details-container-description{
   margin-top: 2rem;
   font-family: Arial sans-serif;
 
   .details-item {
     margin: 1rem 0;
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .project-details-container {
+    background: linear-gradient(180deg, #E4E4E3 20%, #00ffff00 20%);
+    padding: 15% 6%;
+  }
+
+  .details-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-black-border {
+    width: 100%;
+  }
+
+  .details-container {
+    width: 80%;
+  }
+
+  .image-container {
+    width: 70%;
+  }
+
+  .image-grey {
+    -webkit-filter: grayscale(0);
+  }
+
+  .ReactGridGallery_tile-viewport {
+    height: 11vh !important;
   }
 }
