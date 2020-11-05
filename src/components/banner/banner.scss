@@ -60,8 +60,9 @@
   border: 1px white solid;
   height: 100%;
 }
+
 @media (max-width: $xs-screen) {
   .banner-content-wrapper {
-    padding: 7% 5%;
+    padding: 9% 5% 14%;
   }
 }
