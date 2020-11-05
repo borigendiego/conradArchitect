@@ -1,19 +1,14 @@
 @import "../../css/variables";
 
-.contact-container {
-  position: relative;
-  padding: 20px 0;
-}
-
 .contact-content {
   background-color: $sections-background-color;
-  margin: 1rem 0;
+  margin: 1% 0;
 
   .contact-item {
     text-align: center;
     font-family: $text-font-family;
-    font-size: 1.5rem;
-    padding: 0.7rem 0;
+    font-size: clamp(100%, 2vw, 1.5rem);
+    padding: 1% 0;
   }
 }
 
