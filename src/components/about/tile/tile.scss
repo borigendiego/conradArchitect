@@ -4,8 +4,8 @@
 .tile-wrapper {
   width: 50%;
   position: relative;
-  padding: Rem(10px) Rem(70px);
-  margin-bottom: Rem(50px);
+  padding: 2% 7%;
+  margin-bottom: 5%;
 }
 
 .tide-content-wrapper {
@@ -15,13 +15,12 @@
   background: linear-gradient(0, #ffffff 74%, #00ffff00 50%);
 
   img {
-    width: Rem(200px);
-    height: Rem(200px);
+    width: 60%;
   }
 }
 
 .text-wrapper {
-  width: Rem(200px);
+  width: 60%;
   margin-bottom: Rem(25px);
   margin-top: Rem(30px);
   font-family: $text-font-family;
@@ -42,5 +41,11 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .tile-wrapper {
+    width: 100%;
   }
 }
