@@ -123,8 +123,8 @@
 
   #menu li
   {
-    padding: 10px 0;
-    font-size: 22px;
+    padding: 5% 0;
+    font-size: clamp(100%, 5vw, 24px);
     font-family: $title-font-family;
     visibility: hidden;
     transition: all 150ms;
@@ -137,9 +137,12 @@
   {
     width: 80vw;
     height: 50vh;
-    background: $sections-background-color;
+    background: $mobile-menu-background-color;
     transform: translate(-68vw, 0);
 
-    li { visibility: visible; }
+    li {
+      visibility: visible;
+      border-bottom: solid;
+    }
   }
 }

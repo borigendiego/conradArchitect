@@ -5,7 +5,7 @@ import './header.scss';
 import Logo from '../../assets/images/jim-conrad-logo-light.png';
 //Components
 import MobileMenu from './mobile-menu';
-
+//TODO: Move menu link to a constant
 const Header = () => {
     return (
         <nav role={'navigation'}>
@@ -16,7 +16,7 @@ const Header = () => {
                 <ul id={'big-screen-menu'} className={'nav-menu'}>
                     <li>HOME</li>
                     <li>PROJECTS</li>
-                    <li>ABOUT</li>
+                    <li>INFO</li>
                     <li>CONTACT</li>
                 </ul>
                 <MobileMenu />
