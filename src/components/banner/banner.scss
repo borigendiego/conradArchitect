@@ -1,4 +1,4 @@
-@import "../../css/variables";
+@import '../../css/variables';
 
 .banner-container {
   height: 100vh;
@@ -26,16 +26,20 @@
   position: absolute;
   z-index: -1;
 
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  //TODO: Move the URL to a constants
+  #first { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/hor-artboard_1.png"); }
+  #second { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/hor-artboard_2.png"); }
+  #third { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/hor-artboard_3.png"); }
+
   .carousel-image {
     width: 100%;
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-  }
-
-  img {
-    height: 100%;
-    width: 100%;
   }
 
   .carousel-root {
@@ -66,5 +70,11 @@
     //TODO: change this
     //padding: 9% 5% 25%;
     padding: 3.5em 5%;
+  }
+
+  .carousel {
+    #first { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/Artboard_1_mobile.png"); }
+    #second { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/Artboard_2_mobile.png"); }
+    #third { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/Artboard_3_mobile.png"); }
   }
 }
