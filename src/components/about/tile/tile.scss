@@ -14,9 +14,7 @@
   flex-direction: column;
   background: linear-gradient(0, #ffffff 74%, #00ffff00 50%);
 
-  img {
-    width: 60%;
-  }
+  img { width: 60%; }
 }
 
 .text-wrapper {
@@ -35,7 +33,7 @@
 .tile-full-profile {
   @extend .text-wrapper;
   margin: 1rem 0 3rem 0;
-  font-size: 0.8rem;
+  font-size: $links-and-cta-font-size;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
 

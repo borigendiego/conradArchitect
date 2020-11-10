@@ -1,7 +1,8 @@
 import React from 'react';
+import { MENU_LINKS } from '../constants';
 //Style
 import './mobileMenu.scss';
-//TODO: Move menu link to a constant
+
 const MobileMenu = () => {
     return (
         <div id={'menuToggle'}>
@@ -9,11 +10,10 @@ const MobileMenu = () => {
             <span />
             <span />
             <span />
-            <ul id="menu">
-                <a href={'#home'}><li>HOME</li></a>
-                <a href={'#home'}><li>PROJECTS</li></a>
-                <a href={'#home'}><li>INFO</li></a>
-                <a href={'#home'}><li>CONTACT</li></a>
+            <ul id={'menu'}>
+                {
+                    MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
+                }
             </ul>
         </div>
     )

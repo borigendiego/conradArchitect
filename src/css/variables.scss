@@ -4,10 +4,14 @@
 $sections-background-color: #e4e4e4;
 $mobile-menu-background-color: #e4e4e4e6;
 $sections-border-color: #000;
+$white-color: #ffff;
 
 //Container sizes
 $form-container: 57%;
 $large-section-container: 100vw;
+
+//Text sizes
+$links-and-cta-font-size: clamp(100%, 1.1em, 27px);
 
 //Devices sizes
 $xs-screen: 450px;

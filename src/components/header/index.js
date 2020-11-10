@@ -1,11 +1,12 @@
 import React from 'react';
+import { MENU_LINKS } from './constants';
 //css
 import './header.scss';
 //images
 import Logo from '../../assets/images/jim-conrad-logo-light.png';
 //Components
 import MobileMenu from './mobile-menu';
-//TODO: Move menu link to a constant
+
 const Header = () => {
     return (
         <nav role={'navigation'}>
@@ -14,10 +15,9 @@ const Header = () => {
                     <img alt={'logo'} className={'banner-logo'} src={Logo} />
                 </div>
                 <ul id={'big-screen-menu'} className={'nav-menu'}>
-                    <li>HOME</li>
-                    <li>PROJECTS</li>
-                    <li>INFO</li>
-                    <li>CONTACT</li>
+                    {
+                        MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
+                    }
                 </ul>
                 <MobileMenu />
             </div>
