@@ -22,14 +22,18 @@
   margin-bottom: Rem(25px);
   margin-top: Rem(30px);
   font-family: $text-font-family;
+  font-weight: 500;
+
+  h4 {
+    padding: 0.3rem 0;
+    font-weight: 400;
+  }
+
+  h4:first-child {
+    font-weight: 700;
+  }
 }
 
-.tile-name-text {
-  padding: 0.3rem 0;
-}
-.tile-text {
-  padding: 0.3rem 0;
-}
 .tile-full-profile {
   @extend .text-wrapper;
   margin: 1rem 0 3rem 0;
@@ -45,5 +49,11 @@
 @media (max-width: $xs-screen) {
   .tile-wrapper {
     width: 100%;
+  }
+}
+
+@media (min-width: $md-screen) {
+  .tile-wrapper:nth-child(even) {
+    h4 { text-align: right }
   }
 }
