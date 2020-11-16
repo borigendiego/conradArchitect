@@ -54,6 +54,6 @@
 
 @media (min-width: $md-screen) {
   .tile-wrapper:nth-child(even) {
-    h4 { text-align: right }
+    h4, .tile-full-profile { text-align: right }
   }
 }

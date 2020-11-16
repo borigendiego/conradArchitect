@@ -11,7 +11,7 @@ const About = () => {
     useEffect(() => {
         axios.get('https://wp.thehipposoft.com/wp-json/wp/v2/members')
             .then((response) => {
-                console.log('>>res', response.data);
+                //console.log('>>res', response.data);
             })
             .catch(err => console.log('>>error', err));
     });
