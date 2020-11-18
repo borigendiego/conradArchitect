@@ -4,7 +4,7 @@ import SectionLayout from '../common/SectionLayout';
 
 const Contact = () => {
     return (
-        <SectionLayout sectionTitle={'CONTACT'} id={'contact'}>
+        <SectionLayout sectionTitle={'CONTACT'} sectionId={'CONTACT'}>
             <div className={'contact-content'}>
                 <p className={'contact-item'}>jconradarc@gmail.com</p>
                 <p className={'contact-item'}>(949) 233-8625</p>

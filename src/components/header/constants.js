@@ -1,19 +1,19 @@
 const MENU_LINKS = [
     {
         label: 'HOME',
-        linkTo: 'HOME'
+        linkTo: '#HOME'
     },
     {
         label: 'PROJECTS',
-        linkTo: 'PROJECTS'
+        linkTo: '#PROJECTS'
     },
     {
-        label: 'INFO',
-        linkTo: 'INFO'
+        label: 'ABOUT',
+        linkTo: '#ABOUT'
     },
     {
         label: 'CONTACT',
-        linkTo: 'CONTACT'
+        linkTo: '#CONTACT'
     },
 ];
 

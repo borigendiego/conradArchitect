@@ -52,6 +52,7 @@
 .project-details-wrapper {
   position: relative;
   padding: 3% 0;
+  //height: 85vh;
 }
 
 img {
@@ -131,28 +132,20 @@ img {
     padding: 15% 6%;
   }
 
+  .project-details-wrapper { height: 85vh }
+
   .details-content {
     flex-direction: column;
     align-items: center;
   }
 
-  .details-black-border {
-    width: 100%;
-  }
+  .details-black-border { width: 100%; }
 
-  .details-container {
-    width: 80%;
-  }
+  .details-container { width: 80%; }
 
-  .image-container {
-    width: 70%;
-  }
+  .image-container { width: 70%; }
 
-  .image-grey {
-    -webkit-filter: grayscale(0);
-  }
+  .image-grey { -webkit-filter: grayscale(0); }
 
-  .ReactGridGallery_tile-viewport {
-    height: 11vh !important;
-  }
+  .ReactGridGallery_tile-viewport { height: 11vh !important; }
 }

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import './sectionLayout.scss';
 
 const SectionLayout = (props) => {
-    const { sectionTitle } = props;
+    const { sectionTitle, sectionId } = props;
 
     return (
-        <div className={'section-container'}>
+        <div className={'section-container'} id={sectionId}>
             <h1 className={'section-title'}>{sectionTitle}</h1>
             <div className={'section-content-wrapper'}>
                 <div className={'gray-background'} />
