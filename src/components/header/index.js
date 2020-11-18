@@ -6,7 +6,6 @@ import './header.scss';
 import Logo from '../../assets/images/jim-conrad-logo-light.png';
 //Components
 import MobileMenu from './mobile-menu';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = () => {
     return (
@@ -17,7 +16,7 @@ const Header = () => {
                 </div>
                 <ul id={'big-screen-menu'} className={'nav-menu'}>
                     {
-                        MENU_LINKS.map((link,index) => <AnchorLink key={index} href={link.linkTo}><li>{link.label}</li></AnchorLink>)
+                        MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
                     }
                 </ul>
                 <MobileMenu />
