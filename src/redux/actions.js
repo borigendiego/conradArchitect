@@ -8,7 +8,6 @@ export const addProjectList = projectsList => {
 };
 
 export const setSingleProject = projectId => {
-    console.log('>>projectId', projectId);
     return {
         type: SET_SINGLE_PROJECT,
         projectId: projectId,

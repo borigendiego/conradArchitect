@@ -6,7 +6,6 @@ const initialState = {
 };
 
 export default function(state = initialState, action) {
-    console.log('>>action.type', action.type);
     switch (action.type) {
         case ADD_PROJECTS_LIST: {
             const { projectsList } = action;
@@ -18,7 +17,7 @@ export default function(state = initialState, action) {
         }
         case SET_SINGLE_PROJECT: {
             const { projectId } = action;
-            console.log('>>state.projectsList[projectId]', state.projectsList[projectId]);
+
             return {
                 ...state,
                 selectedProject: state.projectsList[projectId],

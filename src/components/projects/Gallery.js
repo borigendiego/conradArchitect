@@ -23,7 +23,7 @@ const Gallery = (props) => {
                 return addProjectList(res);
             })
             .catch(err => console.log('>>error', err))
-    }, []);
+    });
 
     return (
         <>
@@ -53,6 +53,7 @@ const Gallery = (props) => {
                     classParentString={isExpanded ? 'expandedPanel' : ''}
                 >
                     <div className={'more-images-wrapper'}>
+                       {/* //TODO: check logic about index when select a project*/}
                         {projectsList.slice(3,20).map((project, index) =>
                             <div
                                 key={index}

@@ -38,8 +38,6 @@ const DetailsGallery = (props) => {
         }
     });
 
-    console.log('>>IMAGES', IMAGES);
-
     return (
         <Gallery enableImageSelection={false} images={IMAGES} />
     )

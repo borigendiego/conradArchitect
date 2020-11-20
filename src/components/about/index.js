@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+//import axios from 'axios';
 //Styles
 import './about.scss';
 //Components
@@ -8,13 +8,13 @@ import Tide from './tile';
 
 const About = () => {
     //TODO: Finish with the API implementation.
-    useEffect(() => {
+    /*useEffect(() => {
         axios.get('https://wp.thehipposoft.com/wp-json/wp/v2/members')
             .then((response) => {
                 //console.log('>>res', response.data);
             })
             .catch(err => console.log('>>error', err));
-    });
+    });*/
 
     const mockData = [
         {

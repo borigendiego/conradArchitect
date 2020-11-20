@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 //Redux
 import { connect } from 'react-redux';
 import { getSingleProject } from '../../../redux/selectors';
@@ -10,12 +9,6 @@ import Gallery from './DetailsGallery';
 import {
     Link
 } from 'react-router-dom';
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
 
 const ProjectDetails = (props) => {
     const { project } = props;
