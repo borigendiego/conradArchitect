@@ -23,7 +23,7 @@ const Gallery = (props) => {
                 return addProjectList(res);
             })
             .catch(err => console.log('>>error', err))
-    }, []);
+    }, [addProjectList]);
 
     return (
         <>
