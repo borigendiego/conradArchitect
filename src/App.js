@@ -4,7 +4,6 @@ import {
     Switch,
     Route
 } from 'react-router-dom';
-import './App.css';
 //Components
 import BannerSection from './components/banner';
 import Projects from './components/projects';
@@ -12,6 +11,7 @@ import About from './components/about';
 import Contact from './components/contact';
 import ProjectDetails from './components/projects/project-details';
 //css
+import './App.css';
 import './css/global-styles.scss';
 
 function App() {
