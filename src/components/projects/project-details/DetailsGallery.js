@@ -2,8 +2,9 @@ import React from 'react';
 //Components
 import Gallery from 'react-grid-gallery';
 
-const DetailsGallery = () => {
-    const IMAGES =
+const DetailsGallery = (props) => {
+    const { galleryImages } = props;
+    /*const IMAGES =
         [{
             src: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-4.jpg",
             thumbnail: "https://wp.thehipposoft.com/wp-content/uploads/2020/10/project-image-4.jpg",
@@ -25,7 +26,19 @@ const DetailsGallery = () => {
             thumbnailWidth: 150,
             thumbnailHeight: 150,
             caption: "Picture 3"
-        }];
+        }];*/
+
+    const IMAGES = galleryImages.map((imageURL, index) => {
+        return {
+            src: imageURL,
+            thumbnail: imageURL,
+            thumbnailWidth: 150,
+            thumbnailHeight: 150,
+            caption: `Picture ${index}`
+        }
+    });
+
+    console.log('>>IMAGES', IMAGES);
 
     return (
         <Gallery enableImageSelection={false} images={IMAGES} />

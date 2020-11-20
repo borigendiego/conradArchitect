@@ -1,41 +1,46 @@
 import React, { useState, useEffect } from 'react';
+
 import Collapsible from 'react-collapsible';
 import {
     Link
 } from 'react-router-dom';
+//Redux
+import { connect } from 'react-redux';
+import { getProjectsList } from '../../redux/selectors';
+import { addProjectList, setSingleProject } from '../../redux/actions';
 //css
 import './gallery.scss';
 //API
 import { getProjects } from './API';
 
-const Gallery = () => {
-    const [fullProjectsAPI, setFullProjectsAPI] = useState([]);
+const Gallery = (props) => {
+    const { addProjectList, setSingleProject, projectsList } = props;
     const [isExpanded, setIsExpanded] = useState(false);
 
     useEffect(() => {
         getProjects()
             .then(res => {
-                return setFullProjectsAPI(res);
+                return addProjectList(res);
             })
             .catch(err => console.log('>>error', err))
     }, []);
-    //TODO: Finish logic to send project data to project details.
+
     return (
         <>
             <div className={'images-wrapper'}>
-                {fullProjectsAPI.slice(0,3).map((project, index) =>
+                {projectsList.slice(0,3).map((project, index) =>
                     <div
                         key={index}
                         className={'gallery-slide'}
                     >
                         <Link to={'/projects'}>
-                            <img className={'gallery-image'} alt={'as'} src={project.main_image.url} />
+                            <img className={'gallery-image'} alt={'as'} src={project.main_image.url} onClick={() => setSingleProject(index)} />
                         </Link>
                     </div>
                 )}
             </div>
             {
-                fullProjectsAPI.length > 3 &&
+                projectsList.length > 3 &&
                 <Collapsible
                     trigger={
                         <h2
@@ -48,12 +53,12 @@ const Gallery = () => {
                     classParentString={isExpanded ? 'expandedPanel' : ''}
                 >
                     <div className={'more-images-wrapper'}>
-                        {fullProjectsAPI.slice(3,20).map((project, index) =>
+                        {projectsList.slice(3,20).map((project, index) =>
                             <div
                                 key={index}
                                 className={'gallery-slide more-slides'}
                             >
-                                <Link to={'/projects'}>
+                                <Link to={'/projects'} onClick={() => setSingleProject(index)}>
                                     <img className={'gallery-image'} alt={'as'} src={project.main_image.url} />
                                 </Link>
                             </div>
@@ -65,4 +70,16 @@ const Gallery = () => {
     )
 };
 
-export default Gallery
+const mapStateToProps = (state) => ({
+    projectsList: getProjectsList(state),
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    addProjectList: (values) => dispatch(addProjectList(values)),
+    setSingleProject: (projectId) => dispatch(setSingleProject(projectId)),
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Gallery)
