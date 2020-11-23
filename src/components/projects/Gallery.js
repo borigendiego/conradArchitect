@@ -34,7 +34,9 @@ const Gallery = (props) => {
                         className={'gallery-slide'}
                     >
                         <Link to={'/projects'}>
-                            <img className={'gallery-image'} alt={'as'} src={project.main_image.url} onClick={() => setSingleProject(index)} />
+                            <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
+                                 onClick={() => setSingleProject(index)}
+                            />
                         </Link>
                     </div>
                 )}
@@ -59,8 +61,10 @@ const Gallery = (props) => {
                                 key={index}
                                 className={'gallery-slide more-slides'}
                             >
-                                <Link to={'/projects'} onClick={() => setSingleProject(index)}>
-                                    <img className={'gallery-image'} alt={'as'} src={project.main_image.url} />
+                                <Link to={'/projects'} onClick={() => setSingleProject(index + 3)}>
+                                    <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
+                                         onClick={() => setSingleProject(index)}
+                                    />
                                 </Link>
                             </div>
                         )}
