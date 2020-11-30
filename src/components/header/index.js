@@ -19,7 +19,7 @@ const Header = () => {
                         MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
                     }
                 </ul>
-                <MobileMenu />
+                <MobileMenu menuItems={MENU_LINKS} />
             </div>
         </nav>
     )

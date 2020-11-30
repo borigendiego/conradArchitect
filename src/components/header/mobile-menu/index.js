@@ -1,9 +1,10 @@
 import React from 'react';
-import { MENU_LINKS } from '../constants';
 //Style
 import './mobileMenu.scss';
 
-const MobileMenu = () => {
+const MobileMenu = (props) => {
+    const { menuItems } = props;
+
     return (
         <div id={'menuToggle'}>
             <input type="checkbox" />
@@ -12,7 +13,7 @@ const MobileMenu = () => {
             <span />
             <ul id={'menu'}>
                 {
-                    MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
+                    menuItems.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
                 }
             </ul>
         </div>
