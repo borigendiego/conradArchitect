@@ -14,7 +14,10 @@
   flex-direction: column;
   background: linear-gradient(0, #ffffff 74%, #00ffff00 50%);
 
-  img { width: 60%; }
+  img {
+    height: 38vh;
+    width: 18vw;
+  }
 }
 
 .text-wrapper {
