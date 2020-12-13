@@ -21,8 +21,8 @@ const UnderConstructionPage = () => {
     return (
         <div style={containerStyles}>
             <img alt={'underConstruction'} src={Crane} style={imageStyle} />
-            <h1 style={{fontSize: 'clamp(5em, 8vw, 9em)', fontFamily: 'Gotham light'}}>404</h1>
-            <h4 style={{fontSize: 'clamp(1.5em, 4vw, 3em)', fontFamily: 'Gotham italic'}}>Site under construction</h4>
+            <h1 style={{fontSize: 'clamp(5em, 8vw, 9em)', fontFamily: 'Gotham light', margin: '20px 0'}}>404</h1>
+            <h4 style={{fontSize: 'clamp(1.5em, 4vw, 3em)', fontFamily: 'Gotham italic', margin: '20px 0'}}>Site under construction</h4>
         </div>
     )
 };
