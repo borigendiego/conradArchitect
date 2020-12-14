@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './App';
-import UnderConstruction from './UnderConstruction';
+import App from './App';
+import UnderConstruction from './components/underConstruction';
 //Redux
 import { Provider } from 'react-redux';
 import { store, persistor } from './redux/store';

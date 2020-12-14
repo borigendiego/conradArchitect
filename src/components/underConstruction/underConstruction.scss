@@ -1,0 +1,40 @@
+@import "../../css/variables";
+
+.uc_container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.uc_content_wrapper {
+  height: 85%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  img {
+    height: 60%;
+    width: 60%;
+  }
+
+  h1 {
+    font-size: clamp(80px, 11vw, 140px);
+  }
+
+  h4 {
+    font-size: clamp(26px, 3vw, 70px);
+    font-family: $title-font-family;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: clamp(16px, 2vw, 24px);
+    font-family: $text-font-family;
+  }
+}
