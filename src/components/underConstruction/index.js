@@ -1,5 +1,4 @@
 import React from 'react';
-import Crane from '../../assets/icons/crane-color.svg';
 import ConstructionIcon from '../../assets/icons/construction-icon.png';
 //Style
 import './underConstruction.scss'
