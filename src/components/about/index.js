@@ -4,7 +4,7 @@ import React from 'react';
 import './about.scss';
 //Components
 import SectionLayout from '../common/SectionLayout';
-import Tide from './tile';
+import Tile from './tile';
 
 const About = () => {
     //TODO: Finish with the API implementation.
@@ -42,8 +42,31 @@ const About = () => {
 
     return (
         <SectionLayout sectionTitle={'ABOUT'} sectionId={'ABOUT'}>
-            <div className={'tile-container'}>
-                {mockData.map((value, index) => <Tide staffData={value} key={index} />)}
+            <div className={'about-content-wrapper'}>
+                <div className={'team-tile'}>
+                    <img
+                        alt={'team-picture'}
+                        src={'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team-pic2.png'}
+                        className={'team-picture'}
+                    />
+                    <div className={'teams-text-wrapper'}>
+                        <h2 className={'tile-name-text'}>CONRAD ARCHITECTS</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo ut felis at
+                            convallis. Nam viverra risus vel ante tristique, eu dapibus est ultrices. Maecenas ac lectus
+                            ut erat venenatis blandit eu eget magna. Nullam iaculis tempor felis vel varius. Aenean
+                            molestie sem neque, in viverra sem sagittis ac. Aliquam varius nibh a vulputate lacinia.
+                            Nulla dapibus lacus a condimentum venenatis. Mauris id urna in magna dignissim tempor congue
+                            vitae risus. Sed rhoncus dui nec sem pharetra congue. Ut ultricies pellentesque dolor, vel
+                            pellentesque erat gravida at. In facilisis arcu a maximus suscipit. Curabitur sed ex quis
+                            diam rutrum sollicitudin id a nisi. Nullam eros justo, posuere eget rutrum eget, bibendum at
+                            metus.
+                        </p>
+                    </div>
+                </div>
+                <div className={'tile-container'}>
+                    {mockData.map((value, index) => <Tile staffData={value} key={index} />)}
+                </div>
             </div>
         </SectionLayout>
     )

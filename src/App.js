@@ -11,7 +11,6 @@ import About from './components/about';
 import Contact from './components/contact';
 import ProjectDetails from './components/projects/project-details';
 //css
-import './App.css';
 import './css/global-styles.scss';
 
 function App() {

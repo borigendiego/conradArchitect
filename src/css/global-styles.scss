@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 * {
   box-sizing: border-box;
@@ -8,6 +8,21 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: $title-font-family;
+  text-align: center;
+  font-size: clamp(40px, 10vw, 60px);
+}
+
+h2 {
+  font-family: $gotham-bold;
+  font-size: clamp(20px, 6vw, 30px);
+}
+
+p {
+  font-family: $text-font-family;
 }
 
 .black-border {
@@ -33,10 +48,4 @@ html {
   @media (max-width: $xs-screen) {
     width: 100vw;
   }
-}
-
-.section-title {
-  font-family: $title-font-family;
-  text-align: center;
-  font-size: clamp(100%, 10vw, 45px);
 }
