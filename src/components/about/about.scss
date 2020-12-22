@@ -1,4 +1,5 @@
 @import '../../css/variables';
+@import '../../css/helpers';
 
 .tile-container {
   display: flex;
@@ -18,11 +19,8 @@
 }
 
 .team-tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(0, #ffffff 74%, #00ffff00 50%);
+  @include team_tile_container;
+  padding: 0 6rem;
 
   .team-picture {
     height: 35vh;
@@ -30,9 +28,43 @@
   }
 
   .teams-text-wrapper {
-    padding: 0 10%;
     margin: 3% 0;
 
     h2 { margin-bottom: 4%}
+  }
+}
+
+.member-tile {
+  width: 38%;
+  padding: 0 8%;
+  margin-bottom: 5rem;
+
+  img {
+    height: 13rem;
+  }
+
+  .text-wrapper {
+    margin: 10% 0;
+    width: 100%;
+    line-height: 2.5rem;
+  }
+
+  .tile-link {
+    margin: 6% 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: $md-screen) {
+  .team-tile:nth-child(even) {
+    .text-wrapper, .tile-link { text-align: right }
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .member-tile { width: 100%; }
+  .team-tile {
+    background: linear-gradient(0, #ffffff 90%, #00ffff00 50%);
+    padding: 0 3rem;
   }
 }

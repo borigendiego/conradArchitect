@@ -2,3 +2,11 @@
   $remSize: $size / 16px;
   @return $remSize * 1rem;
 }
+
+@mixin team_tile_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0, #ffffff 74%, #00ffff00 50%);
+}

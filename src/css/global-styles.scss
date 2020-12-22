@@ -21,8 +21,29 @@ h2 {
   font-size: clamp(20px, 6vw, 30px);
 }
 
+h5 {
+  font-family: $gotham-bold;
+  font-size: clamp(12px, 3vw, 18px);
+}
+
+h6 {
+  font-family: $text-font-family;
+  font-size: clamp(12px, 3vw, 18px);
+  font-weight: 400;
+}
+
 p {
   font-family: $text-font-family;
+}
+
+a {
+  text-decoration: none;
+  color: $basic-font-color;
+  font-family: $title-font-family;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .black-border {
