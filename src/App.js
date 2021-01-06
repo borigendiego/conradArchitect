@@ -42,6 +42,8 @@ function App() {
                         '                            diam rutrum sollicitudin id a nisi. Nullam eros justo, posuere eget rutrum eget, bibendum at\n' +
                         '                            metus.'}
                         profilePicture={'https://wp.conradarchitect.com/wp-content/uploads/2020/12/Team-Jim.png'}
+                        linkToNextProfile={'/MaureenScallyProfile'}
+                        linkToBackProfile={'/JimConradProfile'}
                     />
                 </Route>
                 <Route path={'/MaureenScallyProfile'}>
@@ -58,6 +60,8 @@ function App() {
                         '                            diam rutrum sollicitudin id a nisi. Nullam eros justo, posuere eget rutrum eget, bibendum at\n' +
                         '                            metus.'}
                         profilePicture={'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team-maureen.png'}
+                        linkToNextProfile={'/JimConradProfile'}
+                        linkToBackProfile={'/MaureenScallyProfile'}
                     />
                 </Route>
             </Switch>

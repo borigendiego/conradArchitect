@@ -83,3 +83,14 @@
     z-index: 2;
   }
 }
+
+@media (max-width: $xs-screen) {
+  .profile-text-wrapper {
+    font-size: 90%;
+  }
+
+  .profile-white-background {
+    top: 10%;
+    height: 80%;
+  }
+}

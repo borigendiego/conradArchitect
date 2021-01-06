@@ -13,7 +13,7 @@ const Profile = (props) => {
     return (
         <div className={'profile-page'}>
             <div className={'profile-gray-background'} />
-            <Link to={'/home'} className={'back-x-link'}>
+            <Link to={'/'} className={'back-x-link'}>
                 <img src={cross} alt={'x-back'} className={'back-x'}/>
             </Link>
             <img alt={`${key}-profile`} src={profilePicture} className={'profile-image'}/>
