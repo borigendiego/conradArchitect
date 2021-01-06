@@ -1,0 +1,85 @@
+@import '../../../css/variables';
+
+.profile-page {
+
+  .profile-image {
+    width: 22%;
+    display: block;
+    margin: 0 auto 2% auto;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.profile-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6%;
+
+  .profile-name-text {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    font-family: $gotham-bold;
+    text-transform: uppercase;
+  }
+
+  .tile-text {
+    font-family: $text-font-family;
+  }
+
+  .profile-text-wrapper {
+    width: 50%;
+  }
+}
+
+.profile-gray-background {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $sections-background-color;
+  z-index: 1;
+}
+
+.profile-white-background {
+  position: absolute;
+  width: 65%;
+  height: 60%;
+  right: 0;
+  left: 0;
+  top: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  z-index: 1;
+}
+
+.arrow-link {
+  width: 7%;
+  display: flex;
+
+  .image {
+    z-index: 2;
+    position: relative;
+  }
+  .right {
+    transform: rotate(180deg);
+  }
+}
+
+.back-x-link {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2% 5% 0 0;
+
+  .back-x {
+    width: 4%;
+    position: relative;
+    z-index: 2;
+  }
+}

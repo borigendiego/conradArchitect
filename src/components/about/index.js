@@ -23,6 +23,7 @@ const About = () => {
             rol: 'Architect - Founder',
             description: 'Short description',
             profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/Team-Jim.png',
+            linkToProfile: '/JimConradProfile',
         },
         {
             name: 'Maureen',
@@ -30,6 +31,7 @@ const About = () => {
             rol: 'Architect - Associate',
             description: 'Short description',
             profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team-maureen.png',
+            linkToProfile: '/MaureenScallyProfile',
         },
         {
             name: 'Jim',
@@ -37,6 +39,7 @@ const About = () => {
             rol: 'Architect - Founder',
             description: 'Short description',
             profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team2.png',
+            linkToProfile: '/JimConradProfile',
         },
     ];
 

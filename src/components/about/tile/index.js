@@ -1,7 +1,10 @@
 import React from 'react';
+import {
+    Link
+} from 'react-router-dom';
 
 const Tile = (props) => {
-    const { key, name, lastName, rol, description, profilePicture } = props.staffData;
+    const { key, name, lastName, rol, description, profilePicture, linkToProfile } = props.staffData;
 
     return (
         <div className={'team-tile member-tile'}>
@@ -11,7 +14,9 @@ const Tile = (props) => {
                 <h6 className={'tile-text'}>{rol}</h6>
                 <h6 className={'tile-text'}>{description}</h6>
             </div>
-            <a href={'#home'} className={'tile-link'}>FULL PROFILE ></a>
+            <Link to={`${linkToProfile}`} className={'tile-link'}>
+                FULL PROFILE >
+            </Link>
         </div>
     )
 };

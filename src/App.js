@@ -10,6 +10,7 @@ import Projects from './components/projects';
 import About from './components/about';
 import Contact from './components/contact';
 import ProjectDetails from './components/projects/project-details';
+import Profile from './components/about/tile/profile';
 //css
 import './css/global-styles.scss';
 
@@ -26,6 +27,38 @@ function App() {
                 </Route>
                 <Route path={'/projects'}>
                     <ProjectDetails />
+                </Route>
+                <Route path={'/JimConradProfile'}>
+                    <Profile
+                        name={'Jim'}
+                        lastName={'Conrad'}
+                        description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo ut felis at\n' +
+                        '                            convallis. Nam viverra risus vel ante tristique, eu dapibus est ultrices. Maecenas ac lectus\n' +
+                        '                            ut erat venenatis blandit eu eget magna. Nullam iaculis tempor felis vel varius. Aenean\n' +
+                        '                            molestie sem neque, in viverra sem sagittis ac. Aliquam varius nibh a vulputate lacinia.\n' +
+                        '                            Nulla dapibus lacus a condimentum venenatis. Mauris id urna in magna dignissim tempor congue\n' +
+                        '                            vitae risus. Sed rhoncus dui nec sem pharetra congue. Ut ultricies pellentesque dolor, vel\n' +
+                        '                            pellentesque erat gravida at. In facilisis arcu a maximus suscipit. Curabitur sed ex quis\n' +
+                        '                            diam rutrum sollicitudin id a nisi. Nullam eros justo, posuere eget rutrum eget, bibendum at\n' +
+                        '                            metus.'}
+                        profilePicture={'https://wp.conradarchitect.com/wp-content/uploads/2020/12/Team-Jim.png'}
+                    />
+                </Route>
+                <Route path={'/MaureenScallyProfile'}>
+                    <Profile
+                        name={'Maureen'}
+                        lastName={'Scally'}
+                        description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo ut felis at\n' +
+                        '                            convallis. Nam viverra risus vel ante tristique, eu dapibus est ultrices. Maecenas ac lectus\n' +
+                        '                            ut erat venenatis blandit eu eget magna. Nullam iaculis tempor felis vel varius. Aenean\n' +
+                        '                            molestie sem neque, in viverra sem sagittis ac. Aliquam varius nibh a vulputate lacinia.\n' +
+                        '                            Nulla dapibus lacus a condimentum venenatis. Mauris id urna in magna dignissim tempor congue\n' +
+                        '                            vitae risus. Sed rhoncus dui nec sem pharetra congue. Ut ultricies pellentesque dolor, vel\n' +
+                        '                            pellentesque erat gravida at. In facilisis arcu a maximus suscipit. Curabitur sed ex quis\n' +
+                        '                            diam rutrum sollicitudin id a nisi. Nullam eros justo, posuere eget rutrum eget, bibendum at\n' +
+                        '                            metus.'}
+                        profilePicture={'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team-maureen.png'}
+                    />
                 </Route>
             </Switch>
         </Router>
