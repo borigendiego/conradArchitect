@@ -48,7 +48,7 @@ const About = () => {
             <div className={'about-content-wrapper'}>
                 <div className={'team-tile'}>
                     <img
-                        alt={'team-picture'}
+                        alt={'team'}
                         src={'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team-pic2.png'}
                         className={'team-picture'}
                     />
