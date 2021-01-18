@@ -3,7 +3,7 @@
 .profile-page {
 
   .profile-image {
-    width: 22%;
+    width: 20%;
     display: block;
     margin: 0 auto 2% auto;
     position: relative;
@@ -27,6 +27,7 @@
 
   .tile-text {
     font-family: $text-font-family;
+    font-size: 0.95rem;
   }
 
   .profile-text-wrapper {
@@ -37,7 +38,7 @@
 .profile-gray-background {
   position: absolute;
   width: 95%;
-  height: 95%;
+  height: 100%;
   right: 0;
   left: 0;
   margin-right: auto;
@@ -49,7 +50,7 @@
 .profile-white-background {
   position: absolute;
   width: 65%;
-  height: 60%;
+  height: 55%;
   right: 0;
   left: 0;
   top: 40%;
@@ -75,7 +76,7 @@
 .back-x-link {
   display: flex;
   justify-content: flex-end;
-  padding: 2% 5% 0 0;
+  padding: 1% 5% 0 0;
 
   .back-x {
     width: 4%;

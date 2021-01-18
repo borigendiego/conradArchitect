@@ -5,6 +5,7 @@ import './about.scss';
 //Components
 import SectionLayout from '../common/SectionLayout';
 import Tile from './tile';
+import {Link} from "react-router-dom";
 
 const About = () => {
     //TODO: Finish with the API implementation.
@@ -34,12 +35,12 @@ const About = () => {
             linkToProfile: '/MaureenScallyProfile',
         },
         {
-            name: 'Jim',
-            lastName: 'Conrad',
-            rol: 'Architect - Founder',
+            name: 'Name3',
+            lastName: 'Lastname3',
+            rol: 'Rol3',
             description: 'Short description',
             profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team2.png',
-            linkToProfile: '/JimConradProfile',
+            linkToProfile: '/Path3',
         },
     ];
 
@@ -66,6 +67,9 @@ const About = () => {
                             metus.
                         </p>
                     </div>
+                    <Link to={'/'} className={'tile-link team-link'}>
+                        FULL PAGE >
+                    </Link>
                 </div>
                 <div className={'tile-container'}>
                     {mockData.map((value, index) => <Tile staffData={value} key={index} />)}
