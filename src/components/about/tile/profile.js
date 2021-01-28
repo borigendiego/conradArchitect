@@ -12,24 +12,22 @@ const Profile = (props) => {
 
     return (
         <div className={'profile-page'}>
-            <div className={'profile-gray-background'} />
             <Link to={'/'} className={'back-x-link'}>
                 <img src={cross} alt={'x-back'} className={'back-x'}/>
             </Link>
-            <img alt={`${key}-profile`} src={profilePicture} className={'profile-image'}/>
-            <div className={'profile-white-background'} />
+            <Link to={linkToNextProfile} className={'arrow-link'}>
+                <img src={arrow} alt={'left-arrow'} className={'left image'}/>
+            </Link>
             <div className={'profile-wrapper'}>
-                <Link to={linkToNextProfile} className={'arrow-link'}>
-                    <img src={arrow} alt={'left-arrow'} className={'left image'}/>
-                </Link>
+                <img alt={`${key}-profile`} src={profilePicture} className={'profile-image'}/>
                 <div className={'profile-text-wrapper'}>
-                    <h5 className={'profile-name-text'}>{`${name} ${lastName}`}</h5>
-                    <p className={'tile-text'}>{description}</p>
+                    <h2 className={'profile-name-text'}>{`${name} ${lastName}`}</h2>
+                    {description}
                 </div>
-                <Link to={linkToBackProfile} className={'arrow-link'}>
-                    <img src={arrow} alt={'right-arrow'} className={'right image'}/>
-                </Link>
             </div>
+            <Link to={linkToBackProfile} className={'arrow-link'}>
+                <img src={arrow} alt={'right-arrow'} className={'right image'}/>
+            </Link>
         </div>
     )
 };

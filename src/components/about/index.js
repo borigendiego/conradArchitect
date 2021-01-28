@@ -5,7 +5,7 @@ import './about.scss';
 //Components
 import SectionLayout from '../common/SectionLayout';
 import Tile from './tile';
-import {Link} from "react-router-dom";
+//import {Link} from "react-router-dom";
 
 const About = () => {
     //TODO: Finish with the API implementation.
@@ -19,14 +19,6 @@ const About = () => {
 
     const mockData = [
         {
-            name: 'Jim',
-            lastName: 'Conrad',
-            rol: 'Architect - Founder',
-            description: 'Short description',
-            profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/Team-Jim.png',
-            linkToProfile: '/JimConradProfile',
-        },
-        {
             name: 'Maureen',
             lastName: 'Scally',
             rol: 'Architect - Associate',
@@ -35,12 +27,20 @@ const About = () => {
             linkToProfile: '/MaureenScallyProfile',
         },
         {
-            name: 'Name3',
-            lastName: 'Lastname3',
-            rol: 'Rol3',
+            name: 'Jim',
+            lastName: 'Conrad',
+            rol: 'Architect - Founder',
+            description: 'Short description',
+            profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/Team-Jim.png',
+            linkToProfile: '/JimConradProfile',
+        },
+        {
+            name: 'Ali',
+            lastName: 'Ashouriha',
+            rol: 'Architect - Associate',
             description: 'Short description',
             profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team2.png',
-            linkToProfile: '/Path3',
+            linkToProfile: '/team-ali',
         },
     ];
 
@@ -67,9 +67,9 @@ const About = () => {
                             metus.
                         </p>
                     </div>
-                    <Link to={'/'} className={'tile-link team-link'}>
+                   {/* <Link to={'/'} className={'tile-link team-link'}>
                         FULL PAGE >
-                    </Link>
+                    </Link>*/}
                 </div>
                 <div className={'tile-container'}>
                     {mockData.map((value, index) => <Tile staffData={value} key={index} />)}

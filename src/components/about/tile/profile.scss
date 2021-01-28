@@ -1,97 +1,76 @@
 @import '../../../css/variables';
 
 .profile-page {
+  background-color: $sections-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10% 0;
 
   .profile-image {
-    width: 20%;
-    display: block;
-    margin: 0 auto 2% auto;
-    position: relative;
-    z-index: 2;
+    width: 80%;
+    height: 45%;
+    margin-bottom: 1%;
   }
 }
 
 .profile-wrapper {
   position: relative;
-  z-index: 2;
   display: flex;
-  justify-content: space-between;
-  padding: 0 6%;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(0, $white-color 85%, #00ffff00 50%);
+  width: 86%;
+  height: 85%;
+  padding: 5% 10%;
 
-  .profile-name-text {
-    font-size: 1.5rem;
-    margin-bottom: 2%;
-    font-family: $gotham-bold;
-    text-transform: uppercase;
-  }
-
-  .tile-text {
-    font-family: $text-font-family;
-    font-size: 0.95rem;
-  }
-
-  .profile-text-wrapper {
-    width: 50%;
-  }
-}
-
-.profile-gray-background {
-  position: absolute;
-  width: 95%;
-  height: 100%;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: $sections-background-color;
-  z-index: 1;
-}
-
-.profile-white-background {
-  position: absolute;
-  width: 65%;
-  height: 55%;
-  right: 0;
-  left: 0;
-  top: 40%;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: white;
-  z-index: 1;
+  .profile-name-text { margin: 10% 0; }
 }
 
 .arrow-link {
-  width: 7%;
-  display: flex;
+  width: 5%;
 
   .image {
     z-index: 2;
     position: relative;
   }
-  .right {
-    transform: rotate(180deg);
-  }
+  .right { transform: rotate(180deg); }
 }
 
 .back-x-link {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1% 5% 0 0;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  height: 7%;
+  width: 7%;
 
   .back-x {
-    width: 4%;
     position: relative;
     z-index: 2;
   }
 }
 
-@media (max-width: $xs-screen) {
-  .profile-text-wrapper {
-    font-size: 90%;
+.description-wrapper {
+
+
+  p { margin: 10px 0 }
+}
+
+@media (min-width: $md-screen) {
+  .profile-page {
+    height: 100vh;
+    padding: 0;
+
+    .profile-image {
+      width: 16em;
+      height: 16em;
+    }
   }
 
-  .profile-white-background {
-    top: 10%;
-    height: 80%;
+  .profile-wrapper {
+    background: linear-gradient(0, $white-color 74%, #00ffff00 50%);
+    padding: 0 5%;
+
+    .profile-name-text { margin: 0 0 2% 0; }
   }
 }

@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: $sections-background-color;
-  padding: 7% 0;
+  padding-top: 10%;
 }
 
 .section-title {
@@ -35,8 +35,8 @@
 }
 
 .member-tile {
-  width: 38%;
-  padding: 0 8%;
+  width: 31%;
+  padding: 0 5%;
   margin-bottom: 5rem;
 
   img {
@@ -55,14 +55,17 @@
   }
 }
 
-.team-link {
-  margin-bottom: 2%
-;
-}
+.team-link { margin-bottom: 2%; }
 
 @media (min-width: $md-screen) {
-  .team-tile:nth-child(even) {
-    .text-wrapper, .tile-link { text-align: right }
+  .team-tile:nth-child(2) {
+    .text-wrapper, .tile-link {
+      text-align: center;
+    }
+  }
+
+  .team-tile:nth-child(3) {
+    .text-wrapper, .tile-link { text-align: right; }
   }
 }
 
