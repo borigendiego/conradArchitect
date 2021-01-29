@@ -47,7 +47,7 @@ const About = () => {
     return (
         <SectionLayout sectionTitle={'ABOUT'} sectionId={'ABOUT'}>
             <div className={'about-content-wrapper'}>
-                <div className={'team-tile'}>
+                    <div className={'team-tile full-team'}>
                     <img
                         alt={'team'}
                         src={'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team-pic2.png'}

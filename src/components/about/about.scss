@@ -20,7 +20,7 @@
 
 .team-tile {
   @include team_tile_container;
-  padding: 0 6rem;
+  padding: 0 8%;
 
   .team-picture {
     height: 40vh;
@@ -30,18 +30,18 @@
   .teams-text-wrapper {
     margin: 3% 0;
 
-    h2 { margin-bottom: 4%}
+    h2 { margin: 10% 0; }
+
+    p { margin-bottom: 10%}
   }
 }
 
 .member-tile {
   width: 31%;
   padding: 0 5%;
-  margin-bottom: 5rem;
+  margin-bottom: 30%;
 
-  img {
-    height: 13rem;
-  }
+  img { height: 13rem; }
 
   .text-wrapper {
     margin: 10% 0;
@@ -70,9 +70,16 @@
 }
 
 @media (max-width: $xs-screen) {
+  .full-team { margin: 20% 0 }
+  .tile-container { padding-top: 10% }
   .member-tile { width: 100%; }
   .team-tile {
-    background: linear-gradient(0, #ffffff 90%, #00ffff00 50%);
-    padding: 0 3rem;
+    background: linear-gradient(0, #ffffff 85%, #00ffff00 50%);
+    padding: 0 10%;
+
+    .team-picture {
+      height: 26vh;
+      width: 50vw;
+    }
   }
 }
