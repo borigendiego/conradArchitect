@@ -25,8 +25,8 @@ const Profile = (props) => {
                     {description}
                 </div>
             </div>
-            <Link to={linkToBackProfile} className={'arrow-link'}>
-                <img src={arrow} alt={'right-arrow'} className={'right image'}/>
+            <Link to={linkToBackProfile} className={'arrow-link right'}>
+                <img src={arrow} alt={'right-arrow'} className={'image'}/>
             </Link>
         </div>
     )

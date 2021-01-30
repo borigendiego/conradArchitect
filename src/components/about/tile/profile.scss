@@ -5,11 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
   padding: 10% 0;
 
   .profile-image {
-    width: 80%;
-    height: 45%;
+    width: 15em;
+    height: 15em;
     margin-bottom: 1%;
   }
 }
@@ -34,8 +35,8 @@
     z-index: 2;
     position: relative;
   }
-  .right { transform: rotate(180deg); }
 }
+.right { transform: rotate(180deg); }
 
 .back-x-link {
   position: absolute;
@@ -52,6 +53,17 @@
 
 .description-wrapper {
   p { margin: 10px 0 }
+}
+
+@media (max-width: $md-screen) {
+  .arrow-link.right { left: 87%; }
+
+  .arrow-link {
+    position: sticky;
+    top: 50vh;
+    left: 1%;
+    width: 10%;
+  }
 }
 
 @media (min-width: $md-screen) {
