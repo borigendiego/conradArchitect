@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(0, $white-color 85%, #00ffff00 50%);
+  background: linear-gradient(0, $white-color calc(100% - 10em), #00ffff00 0);
   width: 86%;
   height: 85%;
   padding: 5% 10%;
