@@ -9,14 +9,9 @@
   padding-top: 10%;
 }
 
-.section-title {
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-}
+.section-title { margin-bottom: 5%; }
 
-.about-content-wrapper {
-  padding: 2% 11%;
-}
+.about-content-wrapper { padding: 2% 11%; }
 
 .team-tile {
   @include team_tile_container;
@@ -58,6 +53,10 @@
 .team-link { margin-bottom: 2%; }
 
 @media (min-width: $md-screen) {
+  .about-content-wrapper {
+    padding: 5% 11%;
+  }
+
   .team-tile:nth-child(2) {
     .text-wrapper, .tile-link {
       text-align: center;
@@ -66,6 +65,16 @@
 
   .team-tile:nth-child(3) {
     .text-wrapper, .tile-link { text-align: right; }
+  }
+
+  .team-tile {
+    .teams-text-wrapper {
+      h2 { margin: 5% 0; }
+    }
+  }
+
+  .member-tile {
+    margin-bottom: 0;
   }
 }
 
