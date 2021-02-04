@@ -4,37 +4,34 @@ const MEMBERS_PROFILES = [
     {
         name: 'Jim',
         lastName: 'Conrad',
+        rol: 'Architect - Founder',
         path: '/JimConradProfile',
         description:
             <div className={'description-wrapper'}>
                 <p>
-                    James Attended California Polytechnic University at Pomona in their school of Environmental Design.
-                    He then went on to work for Newport Beach designer, James Adams, working on restaurants and hotel
-                    projects around the United States. In 1986, James founded his own design/build firm, Pacific
-                    Designers and Builders
+                    James Attended California state Polytechnic University at Pomona in their school in environmental
+                    design.  He then went on to work for Newport Beach designer, James Adams, working on restaurants
+                    and hotel projects around the United States.
                 </p>
                 <p>
-                    He was also a licensed general building contractor and began designing and building custom homes
-                    in South Orange County, primarily in Laguna Beach. This unique combination of skills allowed James
+                    In 1986, James found it his own design/ build firm, Pacific Designers and Builders.
+                    James was also a licensed general building contractor and began designing and building custom homes
+                    in South Orange County, primarily in Laguna Beach. This unique combination of skills allowed James
                     to design homes that were both beautiful and structurally efficient to build.
                 </p>
                 <p>
-                    James then founded Conrad Development and he developed numerous high end custom homes in
-                    Laguna Beach, California and Scottsdale, Arizona. He honed his skills in all aspects of development
-                    from selection of property, Architectural and Interior Design, procurement of entitlements,
-                    Finance, construction and marketing of properties.  This full spectrum of expertise allows James to guide
-                    his clients through the entire development process.
+                    James founded Conrad Development and he developed numerous high end custom homes in Laguna Beach,
+                    California and Scottsdale, Arizona.  He honed his skills in all aspects of development from
+                    Selection of property, Architectural and Interior Design, procurement of entitlements, Finance,
+                    construction and marketing of property. This full spectrum expertise allows James to guide his
+                    clients through the entire development process.
                 </p>
                 <p>
-                    In 2000, James suspended the construction side of his business and developed relationships with
-                    highly qualified builders and interior designers to ensure his projects were built as well as they
-                    are designed.  James now focuses his energy on the architectural discipline, designing high
-                    end homes, restaurants and small commercial projects primarily in California and Cabo San Lucas,
-                    Mexico.
+                    James now focuses his energy on the architectural discipline, designing high end homes, restaurants and small commercial projects primarily in California
+                    and Cabo San Lucas, Mexico.
                 </p>
-            </div>
-        ,
-        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/Team-Jim.png',
+            </div>,
+        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/jim-conrad-scaled.jpg',
         linkToNextProfile:'/MaureenScallyProfile',
         linkToBackProfile:'/team-ali',
     },
@@ -42,6 +39,7 @@ const MEMBERS_PROFILES = [
         name: 'Maureen',
         lastName: 'Scally',
         path: '/MaureenScallyProfile',
+        rol: 'Architect - Associate',
         description:
             <div className={'description-wrapper'}>
                 <p>
@@ -64,14 +62,14 @@ const MEMBERS_PROFILES = [
                     as the possibility of creating spaces where people can make the most of their living experiences.
                 </p>
             </div>,
-        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team-maureen.png',
+        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/maureen-scally-scaled.jpg',
         linkToNextProfile:'/team-ali',
         linkToBackProfile:'/JimConradProfile',
     },
     {
         name: 'Ali',
-        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2020/12/team2.png',
         lastName: 'Ashouriha',
+        rol: 'Architect - Associate',
         path: '/team-ali',
         description:
             <div className={'description-wrapper'}>
@@ -92,6 +90,7 @@ const MEMBERS_PROFILES = [
                     mixed- use residential and affordable housing projects as a licensed Architect and licensed Contractor.
                 </p>
             </div>,
+        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/ali-Ashouriha-scaled.jpg',
         linkToNextProfile:'/JimConradProfile',
         linkToBackProfile:'/MaureenScallyProfile',
     }
