@@ -4,10 +4,16 @@ import React from 'react';
 import './about.scss';
 //Components
 import SectionLayout from '../common/SectionLayout';
+import MobileCarousel from '../common/carousel';
 import Tile from './tile';
 //Constant
-import './constants';
-import {ABOUT_PARAGRAPH_FOUR, ABOUT_PARAGRAPH_ONE, ABOUT_PARAGRAPH_THREE, ABOUT_PARAGRAPH_TWO} from "./constants";
+import {
+    MEMBERS,
+    ABOUT_PARAGRAPH_FOUR,
+    ABOUT_PARAGRAPH_ONE,
+    ABOUT_PARAGRAPH_THREE,
+    ABOUT_PARAGRAPH_TWO
+} from './constants';
 
 const About = () => {
     //TODO: Finish with the API implementation.
@@ -18,30 +24,6 @@ const About = () => {
             })
             .catch(err => console.log('>>error', err));
     });*/
-    // TODO: Use the member profile constants
-    const mockData = [
-        {
-            name: 'Maureen',
-            lastName: 'Scally',
-            rol: 'Architect - Associate',
-            profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/maureen-scally-scaled.jpg',
-            linkToProfile: '/MaureenScallyProfile',
-        },
-        {
-            name: 'Jim',
-            lastName: 'Conrad',
-            rol: 'Architect - Founder',
-            profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/jim-conrad-scaled.jpg',
-            linkToProfile: '/JimConradProfile',
-        },
-        {
-            name: 'Ali',
-            lastName: 'Ashouriha',
-            rol: 'Architect - Associate',
-            profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/ali-Ashouriha-scaled.jpg',
-            linkToProfile: '/team-ali',
-        },
-    ];
 
     return (
         <SectionLayout sectionTitle={'ABOUT'} sectionId={'ABOUT'}>
@@ -55,6 +37,7 @@ const About = () => {
                     <div className={'teams-text-wrapper'}>
                         <h2 className={'tile-name-text'}>CONRAD ARCHITECTS</h2>
                         <div className={'about-text-wrapper'}>
+                            <MobileCarousel />
                             <div className={'about-paragraphs'}>
                                 <p>{ABOUT_PARAGRAPH_ONE}</p>
                                 <p>{ABOUT_PARAGRAPH_TWO}</p>
@@ -71,7 +54,7 @@ const About = () => {
                     </Link>*/}
                 </div>
                 <div className={'tile-container'}>
-                    {mockData.map((value, index) => <Tile staffData={value} key={index} />)}
+                    {MEMBERS.map((value, index) => <Tile staffData={value} key={index} />)}
                 </div>
             </div>
         </SectionLayout>

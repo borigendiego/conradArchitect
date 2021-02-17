@@ -11,5 +11,34 @@ const ABOUT_PARAGRAPH_THREE = 'JCA works primarily in Southern California but ha
 const ABOUT_PARAGRAPH_FOUR = 'The combination of experience and highly personalized service allows JCA provide' +
     ' a full array of services to clients wanting to build their dream home.';
 
+const MEMBERS = [
+    {
+        name: 'Maureen',
+        lastName: 'Scally',
+        rol: 'Architect - Associate',
+        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/maureen-scally-scaled.jpg',
+        linkToProfile: '/MaureenScallyProfile',
+    },
+    {
+        name: 'Jim',
+        lastName: 'Conrad',
+        rol: 'Architect - Founder',
+        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/jim-conrad-scaled.jpg',
+        linkToProfile: '/JimConradProfile',
+    },
+    {
+        name: 'Ali',
+        lastName: 'Ashouriha',
+        rol: 'Architect - Associate',
+        profilePicture: 'https://wp.conradarchitect.com/wp-content/uploads/2021/02/ali-Ashouriha-scaled.jpg',
+        linkToProfile: '/team-ali',
+    },
+]
 
-export { ABOUT_PARAGRAPH_ONE, ABOUT_PARAGRAPH_TWO, ABOUT_PARAGRAPH_THREE, ABOUT_PARAGRAPH_FOUR };
+export {
+    ABOUT_PARAGRAPH_ONE,
+    ABOUT_PARAGRAPH_TWO,
+    ABOUT_PARAGRAPH_THREE,
+    ABOUT_PARAGRAPH_FOUR,
+    MEMBERS,
+};

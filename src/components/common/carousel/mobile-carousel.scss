@@ -1,0 +1,40 @@
+@import '../../../css/variables';
+
+.mobile-carousel_container {
+  display: none;
+}
+
+
+
+@media (max-width: $xs-screen) {
+  .mobile-carousel_container {
+    display: initial;
+    padding: 5% 0;
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .about-paragraphs ,.about-quote {
+    display: none;
+  }
+
+  .arrow {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 10%;
+    height: 20px;
+    width: 40px;
+    transform: rotate(180deg);
+  }
+
+  .back {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+}
