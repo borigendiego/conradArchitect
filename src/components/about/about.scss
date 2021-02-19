@@ -109,7 +109,7 @@
   .tile-container { padding-top: 10% }
   .member-tile { width: 100%; }
   .team-tile {
-    background: linear-gradient(0, #ffffff 85%, #00ffff00 50%);
+    background: linear-gradient(0, #ffffff 75%, #00ffff00 50%);
     padding: 0 10%;
 
     .team-picture {
@@ -117,4 +117,5 @@
       width: 50vw;
     }
   }
+  .member-tile-image{}
 }

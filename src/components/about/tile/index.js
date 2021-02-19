@@ -8,7 +8,7 @@ const Tile = (props) => {
 
     return (
         <div className={'team-tile member-tile'}>
-            <img alt={`${key}-profile`} src={profilePicture} />
+            <img alt={`${key}-profile`} src={profilePicture} className={'member-tile-image'} />
             <div className={'text-wrapper'}>
                 <h5 className={'tile-name-text'}>{`${name} ${lastName}`}</h5>
                 <h6 className={'tile-text'}>{rol}</h6>
