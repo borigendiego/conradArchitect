@@ -30,6 +30,10 @@
     transform: rotate(180deg);
   }
 
+  .arrow[disabled] {
+    display: none;
+  }
+
   .back {
     left: 0;
   }
