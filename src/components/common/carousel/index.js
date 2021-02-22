@@ -51,7 +51,7 @@ const MyCarousel = () => {
                         </Slide>
                     </Slider>
                     <ButtonNext className={'arrow next'}>
-                        <img className={'arrow back'} alt={'back-arrow'} src={Arrow} />
+                        <img alt={'back-arrow'} src={Arrow} />
                     </ButtonNext>
                 </div>
             </CarouselProvider>
