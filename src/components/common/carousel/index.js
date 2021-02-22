@@ -17,7 +17,7 @@ const MyCarousel = () => {
         <div className={'mobile-carousel_container'}>
             <CarouselProvider
                 naturalSlideWidth={200}
-                naturalSlideHeight={100}
+                naturalSlideHeight={110}
                 totalSlides={3}
                 className={'carousel-container'}
             >
