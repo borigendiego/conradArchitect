@@ -2,7 +2,7 @@
 
 .mobile-carousel_container { display: none; }
 
-@media (max-width: $xs-screen) {
+@media (max-width: $md-screen) {
   .mobile-carousel_container {
     display: initial;
     padding: 5% 0;

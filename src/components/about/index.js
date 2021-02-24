@@ -45,7 +45,7 @@ const About = () => {
                             </div>
                             <div className={'about-quote'}>
                                 <p className={'quote-text'}>&#8220;{ABOUT_PARAGRAPH_FOUR}&#8221;</p>
-                                <span className={'quote-name'}>-James Conrad, President</span>
+                                <span className={'quote-name'}>-James Conrad, Founder</span>
                             </div>
                         </div>
                     </div>
