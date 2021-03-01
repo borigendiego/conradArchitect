@@ -4,10 +4,10 @@ import {
 } from 'react-router-dom';
 
 const Tile = (props) => {
-    const { key, name, lastName, rol, profilePicture, linkToProfile } = props.staffData;
+    const { key, name, lastName, rol, profilePicture, linkToProfile, id } = props.staffData;
 
     return (
-        <div className={'team-tile member-tile'}>
+        <div id={`order-${id}`} className={'team-tile member-tile'}>
             <img alt={`${key}-profile`} src={profilePicture} className={'member-tile-image'} />
             <div className={'text-wrapper'}>
                 <h5 className={'tile-name-text'}>{`${name} ${lastName}`}</h5>

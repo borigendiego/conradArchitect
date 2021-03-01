@@ -13,6 +13,7 @@ const ABOUT_PARAGRAPH_FOUR = 'The combination of experience and highly personali
 
 const MEMBERS = [
     {
+        id: 3,
         name: 'Maureen',
         lastName: 'Scally',
         rol: 'Architect - Associate',
@@ -20,6 +21,7 @@ const MEMBERS = [
         linkToProfile: '/MaureenScallyProfile',
     },
     {
+        id: 1,
         name: 'Jim',
         lastName: 'Conrad',
         rol: 'Architect - Founder',
@@ -27,6 +29,7 @@ const MEMBERS = [
         linkToProfile: '/JimConradProfile',
     },
     {
+        id: 2,
         name: 'Ali',
         lastName: 'Ashouriha',
         rol: 'Architect - Associate',
