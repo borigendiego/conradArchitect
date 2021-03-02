@@ -12,7 +12,10 @@ import {
     ABOUT_PARAGRAPH_FOUR,
     ABOUT_PARAGRAPH_ONE,
     ABOUT_PARAGRAPH_THREE,
-    ABOUT_PARAGRAPH_TWO
+    ABOUT_PARAGRAPH_TWO,
+    CAROUSEL_TEXT_ONE,
+    CAROUSEL_TEXT_TWO,
+    CAROUSEL_TEXT_THREE,
 } from './constants';
 
 const About = () => {
@@ -37,7 +40,7 @@ const About = () => {
                     <div className={'teams-text-wrapper'}>
                         <h2 className={'tile-name-text'}>CONRAD ARCHITECTS</h2>
                         <div className={'about-text-wrapper'}>
-                            <MobileCarousel />
+                            <MobileCarousel textOne={CAROUSEL_TEXT_ONE} textTwo={CAROUSEL_TEXT_TWO} textThree={CAROUSEL_TEXT_THREE} />
                             <div className={'about-paragraphs'}>
                                 <p>{ABOUT_PARAGRAPH_ONE}</p>
                                 <p>{ABOUT_PARAGRAPH_TWO}</p>

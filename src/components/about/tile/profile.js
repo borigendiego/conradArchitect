@@ -3,6 +3,8 @@ import './profile.scss';
 import {
     Link
 } from 'react-router-dom';
+//Components
+import MobileCarousel from '../../common/carousel'
 //Images
 import arrow from '../../../assets/images/atras.svg';
 import cross from '../../../assets/images/eliminar-cruz.svg';
@@ -22,7 +24,9 @@ const Profile = (props) => {
                 <img alt={`${key}-profile`} src={profilePicture} className={'profile-image'}/>
                 <div className={'profile-text-wrapper'}>
                     <h2 className={'profile-name-text'}>{`${name} ${lastName}`}</h2>
-                    {description}
+                    <div className={'profile-text-description'}>
+                        {description}
+                    </div>
                 </div>
             </div>
             <Link to={linkToBackProfile} className={'arrow-link right'}>

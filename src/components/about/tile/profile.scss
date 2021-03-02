@@ -76,6 +76,10 @@
     width: 10%;
     z-index: 1;
   }
+
+  .description-wrapper {
+    display: initial;
+  }
 }
 
 @media (min-width: $md-screen) {
@@ -95,4 +99,5 @@
 
     .profile-name-text { margin: 0 0 2% 0; }
   }
+
 }

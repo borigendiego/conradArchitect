@@ -108,12 +108,7 @@
 
 @media (max-width: $xs-screen) {
   .full-team { margin: 20% 0 }
-  .tile-container {
-    #order-1 {order: 1}
-    #order-2 {order: 2}
-    #order-3 {order: 3}
-    padding-top: 10%;
-  }
+  .tile-container { padding-top: 10% }
   .member-tile { width: 100%; }
   .team-tile {
     background: linear-gradient(0, #ffffff 75%, #00ffff00 50%);
@@ -124,4 +119,5 @@
       width: 50vw;
     }
   }
+  .member-tile-image{}
 }

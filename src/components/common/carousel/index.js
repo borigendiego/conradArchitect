@@ -12,7 +12,10 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 //Icons
 import Arrow from '../../../assets/right-arrow.svg';
 
-const MyCarousel = () => {
+const MyCarousel = (props) => {
+
+    const { textOne, textTwo, textThree} = props;
+
     return (
         <div className={'mobile-carousel_container'}>
             <CarouselProvider
@@ -29,25 +32,13 @@ const MyCarousel = () => {
                         className={'slider-wrapper'}
                     >
                         <Slide index={1}>
-                            <p>
-                                The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by
-                                James Conrad. James concurrently found a development company called Conrad
-                                Development.
-                            </p>
+                            <p>{textOne}</p>
                         </Slide>
                         <Slide index={2}>
-                            <p>
-                                The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by
-                                James Conrad. James concurrently found a development company called Conrad
-                                Development.
-                            </p>
+                            <p>{textTwo}</p>
                         </Slide>
                         <Slide index={3}>
-                            <p>
-                                The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by
-                                James Conrad. James concurrently found a development company called Conrad
-                                Development.
-                            </p>
+                            <p>{textThree}</p>
                         </Slide>
                     </Slider>
                     <ButtonNext className={'arrow next'}>
