@@ -10,7 +10,15 @@ import arrow from '../../../assets/images/atras.svg';
 import cross from '../../../assets/images/eliminar-cruz.svg';
 
 const Profile = (props) => {
-    const { key, name, lastName, description, profilePicture, linkToNextProfile, linkToBackProfile } = props;
+    const { key,
+        name,
+        lastName,
+        description,
+        profilePicture,
+        linkToNextProfile,
+        linkToBackProfile,
+        mobileCarouselSlides
+    } = props;
 
     return (
         <div className={'profile-page'}>
@@ -22,13 +30,13 @@ const Profile = (props) => {
             </Link>
             <div className={'profile-wrapper'}>
                 <img alt={`${key}-profile`} src={profilePicture} className={'profile-image'}/>
-                <div className={'profile-text-wrapper'}>
-                    <h2 className={'profile-name-text'}>{`${name} ${lastName}`}</h2>
-                    <div className={'profile-text-description'}>
-                        {description}
-                    </div>
+                <h2 className={'profile-name-text'}>{`${name} ${lastName}`}</h2>
+                <div className={'profile-text-description'}>
+                    {description}
                 </div>
+                <MobileCarousel slides={mobileCarouselSlides} />
             </div>
+
             <Link to={linkToBackProfile} className={'arrow-link right'}>
                 <img src={arrow} alt={'right-arrow'} className={'image'}/>
             </Link>

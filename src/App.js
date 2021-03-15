@@ -40,6 +40,7 @@ function App() {
                                 profilePicture={member.profilePicture}
                                 linkToNextProfile={member.linkToNextProfile}
                                 linkToBackProfile={member.linkToBackProfile}
+                                mobileCarouselSlides={member.mobileCarouselSlides}
                             />
                         </Route>
                     )

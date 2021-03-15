@@ -19,7 +19,7 @@ const MyCarousel = ({ slides }) => {
             <CarouselProvider
                 naturalSlideWidth={200}
                 naturalSlideHeight={110}
-                totalSlides={3}
+                totalSlides={slides.length}
                 className={'carousel-container'}
             >
                 <div className={'sliders'}>
