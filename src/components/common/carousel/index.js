@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
     CarouselProvider,
     Slider,
@@ -12,10 +13,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 //Icons
 import Arrow from '../../../assets/right-arrow.svg';
 
-const MyCarousel = (props) => {
-
-    const { textOne, textTwo, textThree} = props;
-
+const MyCarousel = ({ slides }) => {
     return (
         <div className={'mobile-carousel_container'}>
             <CarouselProvider
@@ -31,15 +29,13 @@ const MyCarousel = (props) => {
                     <Slider
                         className={'slider-wrapper'}
                     >
-                        <Slide index={1}>
-                            <p>{textOne}</p>
-                        </Slide>
-                        <Slide index={2}>
-                            <p>{textTwo}</p>
-                        </Slide>
-                        <Slide index={3}>
-                            <p>{textThree}</p>
-                        </Slide>
+                        {
+                            slides.map((item, index) =>
+                                <Slide key={`slide-${index}`} index={index}>
+                                    {item}
+                                </Slide>
+                            )
+                        }
                     </Slider>
                     <ButtonNext className={'arrow next'}>
                         <img alt={'back-arrow'} src={Arrow} />
@@ -48,6 +44,10 @@ const MyCarousel = (props) => {
             </CarouselProvider>
         </div>
     )
+};
+
+MyCarousel.prototypes = {
+    slides: PropTypes.array,
 };
 
 export default MyCarousel;

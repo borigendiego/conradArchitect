@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ABOUT_PARAGRAPH_ONE = 'The Architectural firm, James Conrad, Architects (JCA )' +
     ' was founded in 1990 by James Conrad. James concurrently found a development company called Conrad Development.';
 
@@ -11,17 +13,23 @@ const ABOUT_PARAGRAPH_THREE = 'JCA works primarily in Southern California but ha
 const ABOUT_PARAGRAPH_FOUR = 'The combination of experience and highly personalized service allows JCA provide' +
     ' a full array of services to clients wanting to build their dream home.';
 
-const CAROUSEL_TEXT_ONE = 'The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by\n' +
-    '                                James Conrad. James concurrently found a development company called Conrad\n' +
-    '                                Development.';
-
-const CAROUSEL_TEXT_TWO = 'The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by\n' +
-    '                                James Conrad. James concurrently found a development company called Conrad\n' +
-    '                                Development.';
-
-const CAROUSEL_TEXT_THREE = 'The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by\n' +
-    '                                James Conrad. James concurrently found a development company called Conrad\n' +
-    '                                Development.';
+const TEAM_CAROUSEL_SLIDES = [
+    <p>
+        The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by
+        James Conrad. James concurrently found a development company called Conrad
+        Development.
+    </p>,
+    <p>
+        The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by
+        James Conrad. James concurrently found a development company called Conrad
+        Development.
+    </p>,
+    <p>
+        The Architectural firm, James Conrad, Architects (JCA ) was founded in 1990 by
+        James Conrad. James concurrently found a development company called Conrad
+        Development.
+    </p>
+]
 
 const MEMBERS = [
     {
@@ -56,7 +64,5 @@ export {
     ABOUT_PARAGRAPH_THREE,
     ABOUT_PARAGRAPH_FOUR,
     MEMBERS,
-    CAROUSEL_TEXT_ONE,
-    CAROUSEL_TEXT_TWO,
-    CAROUSEL_TEXT_THREE,
+    TEAM_CAROUSEL_SLIDES
 };
