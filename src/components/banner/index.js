@@ -9,7 +9,7 @@ const Banner = () => {
     return (
         <div className={'banner-container'}>
             <div className={'carousel-container'}>
-                <Carousel/>
+                <Carousel />
             </div>
             <div className={'banner-content-wrapper'}>
                 <div className={'white-border'}>

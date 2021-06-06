@@ -14,6 +14,8 @@ import {
     ABOUT_PARAGRAPH_TWO,
     TEAM_CAROUSEL_SLIDES,
 } from './constants';
+//Images
+import team from '../../assets/images/conrad-architect-team-min.jpeg'
 
 const About = () => {
     return (
@@ -21,8 +23,8 @@ const About = () => {
             <div className={'about-content-wrapper'}>
                 <div className={'team-tile full-team'}>
                     <img
-                        alt={'team'}
-                        src={'https://wp.conradarchitect.com/wp-content/uploads/2021/02/conrad-architect-team.jpg'}
+                        alt={'Conrad Architect team'}
+                        src={team}
                         className={'team-picture'}
                     />
                     <div className={'teams-text-wrapper'}>
