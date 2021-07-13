@@ -46,7 +46,7 @@ const Gallery = (props) => {
             }
 
             {
-                projectsList.length > 9 &&
+                projectsList && projectsList.length > 9 &&
                 <Collapsible
                     trigger={
                         <h2
