@@ -26,20 +26,25 @@ const Gallery = (props) => {
 
     return (
         <>
-            <div className={'images-wrapper'}>
-                {projectsList.slice(0,9).map((project, index) =>
-                    <div
-                        key={index}
-                        className={'gallery-slide'}
-                    >
-                        <Link to={'/projects'}>
-                            <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
-                                 onClick={() => setSingleProject(index)}
-                            />
-                        </Link>
+            {
+                projectsList
+                    ? <div className={'images-wrapper'}>
+                        {projectsList.slice(0,9).map((project, index) =>
+                            <div
+                                key={index}
+                                className={'gallery-slide'}
+                            >
+                                <Link to={'/projects'}>
+                                    <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
+                                         onClick={() => setSingleProject(index)}
+                                    />
+                                </Link>
+                            </div>
+                        )}
                     </div>
-                )}
-            </div>
+                    : <h4>No projects to display</h4>
+            }
+
             {
                 projectsList.length > 9 &&
                 <Collapsible
