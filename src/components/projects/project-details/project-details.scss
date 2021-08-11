@@ -126,6 +126,11 @@ img {
   }
 }
 
+.gallery {
+  height: 40vh;
+  overflow-y: scroll;
+}
+
 @media (max-width: $xs-screen) {
   .project-details-container {
     background: linear-gradient(180deg, #E4E4E3 20%, #00ffff00 20%);
