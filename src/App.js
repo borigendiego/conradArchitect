@@ -17,38 +17,38 @@ import './css/global-styles.scss';
 import { MEMBERS_PROFILES } from './constants';
 
 function App() {
-  return (
-    <div>
-        <Router>
-            <Switch>
-                <Route exact path={'/'}>
-                    <BannerSection />
-                    <Projects />
-                    <About />
-                    <Contact />
-                </Route>
-                <Route path={'/projects'}>
-                    <ProjectDetails />
-                </Route>
-                {
-                    MEMBERS_PROFILES.map(member =>
-                        <Route path={member.path} key={member.name}>
-                            <Profile
-                                name={member.name}
-                                lastName={member.lastName}
-                                description={member.description}
-                                profilePicture={member.profilePicture}
-                                linkToNextProfile={member.linkToNextProfile}
-                                linkToBackProfile={member.linkToBackProfile}
-                                mobileCarouselSlides={member.mobileCarouselSlides}
-                            />
-                        </Route>
-                    )
-                }
-            </Switch>
-        </Router>
-    </div>
-  );
+    return (
+        <div>
+            <Router>
+                <Switch>
+                    <Route exact path={'/'}>
+                        <BannerSection />
+                        <Projects />
+                        <About />
+                        <Contact />
+                    </Route>
+                    <Route path={'/projects'}>
+                        <ProjectDetails />
+                    </Route>
+                    {
+                        MEMBERS_PROFILES.map(member =>
+                            <Route path={member.path} key={member.name}>
+                                <Profile
+                                    name={member.name}
+                                    lastName={member.lastName}
+                                    description={member.description}
+                                    profilePicture={member.profilePicture}
+                                    linkToNextProfile={member.linkToNextProfile}
+                                    linkToBackProfile={member.linkToBackProfile}
+                                    mobileCarouselSlides={member.mobileCarouselSlides}
+                                />
+                            </Route>
+                        )
+                    }
+                </Switch>
+            </Router>
+        </div>
+    );
 }
 
 export default App;

@@ -58,6 +58,10 @@
   p { margin: 10px 0 }
 }
 
+.profile-text-description {
+  overflow: scroll;
+}
+
 @media (max-width: $md-screen) {
   .profile-text-description { display: none }
   .back-x-link {

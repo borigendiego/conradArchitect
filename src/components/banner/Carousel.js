@@ -3,10 +3,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 //Components
 import { Carousel } from 'react-responsive-carousel';
 //images
-import slideImage from '../../assets/images/hor-artboard_3_opt.png';
+import { CAROUSEL_IMAGES } from './constants';
 
 const MyCarousel = () => {
-    //TODO: Creat a constant and use a map function to render images
     return (
         <div className={'carousel'}>
             <Carousel
@@ -16,27 +15,17 @@ const MyCarousel = () => {
                 showArrows={false}
                 showStatus={false}
             >
-                <div>
-                    <img
-                        id={'first'}
-                        alt={'first'}
-                        src={slideImage}
-                    />
-                </div>
-                <div>
-                    <img
-                        id={'second'}
-                        alt={'second'}
-                        src={slideImage}
-                    />
-                </div>
-                <div>
-                    <img
-                        id={'third'}
-                        alt={'third'}
-                        src={slideImage}
-                    />
-                </div>
+                {
+                    CAROUSEL_IMAGES.map(item => (
+                        <div>
+                            <img
+                                id={item.id}
+                                alt={item.alt}
+                                src={item.img}
+                            />
+                        </div>
+                    ))
+                }
             </Carousel>
         </div>
     )
