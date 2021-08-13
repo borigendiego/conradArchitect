@@ -2,6 +2,8 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 //Components
 import { Carousel } from 'react-responsive-carousel';
+//images
+import { CAROUSEL_IMAGES } from './constants';
 
 const MyCarousel = () => {
     return (
@@ -9,19 +11,21 @@ const MyCarousel = () => {
             <Carousel
                 autoPlay={true}
                 infiniteLoop={true}
-                showStatus={false}
                 showThumbs={false}
                 showArrows={false}
+                showStatus={false}
             >
-                <div>
-                    <img id={'first'} alt={'first'} />
-                </div>
-                <div>
-                    <img id={'second'} alt={'second'} />
-                </div>
-                <div>
-                    <img id={'third'} alt={'third'}  />
-                </div>
+                {
+                    CAROUSEL_IMAGES.map(item => (
+                        <div>
+                            <img
+                                id={item.id}
+                                alt={item.alt}
+                                src={item.img}
+                            />
+                        </div>
+                    ))
+                }
             </Carousel>
         </div>
     )

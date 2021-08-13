@@ -1,4 +1,4 @@
-@import "../../css/variables";
+@import '../../css/variables';
 
 .images-wrapper {
   display: flex;
@@ -19,13 +19,19 @@
   margin-bottom: 5%;
   height: 42vh;
   width: 30%;
+  transition: all 500ms;
+
+  &:hover {
+    width: 35%;
+    height: 44vh;
+  }
 
   .gallery-image {
     height: 100%;
     width: 100%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    transition: all 1s;
+    transition: filter 1s;
   }
 
   .gallery-image:hover {

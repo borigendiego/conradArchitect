@@ -11,6 +11,7 @@
   z-index: 2;
   margin: auto;
   overflow-x: hidden;
+  background: rgba(0,0,0,0.2);
 }
 
 .carousel-container {
@@ -30,10 +31,12 @@
     height: 100%;
     width: 100%;
   }
-  //TODO: Move the URL to a constants
-  #first { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/hor-artboard_1.png"); }
-  #second { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/hor-artboard_2.png"); }
-  #third { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/hor-artboard_3.png"); }
+  //TODO: Move the URL to a constants. This will be static don't need to came from API
+  /*
+  #first { content:url("https://wp.conradarchitect.com/wp-content/uploads/2020/11/hor-artboard_1.png"); }
+  #second { content:url("https://wp.conradarchitect.com/wp-content/uploads/2020/11/hor-artboard_2.png"); }
+  #third { content:url("https://wp.conradarchitect.com/wp-content/uploads/2020/11/hor-artboard_3.png"); }
+   */
 
   .carousel-image {
     width: 100%;
@@ -71,10 +74,12 @@
     //padding: 9% 5% 25%;
     padding: 3.5em 5%;
   }
-
+/*
   .carousel {
     #first { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/Artboard_1_mobile.png"); }
     #second { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/Artboard_2_mobile.png"); }
     #third { content:url("https://wp.thehipposoft.com/wp-content/uploads/2020/11/Artboard_3_mobile.png"); }
   }
+
+ */
 }

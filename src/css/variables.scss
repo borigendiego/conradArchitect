@@ -1,10 +1,11 @@
-@import "helpers.scss";
+@import 'helpers.scss';
 
 //Colors
 $sections-background-color: #e4e4e4;
 $mobile-menu-background-color: #e4e4e4e6;
 $sections-border-color: #000;
 $white-color: #ffff;
+$basic-font-color: rgba(0, 0, 0, 0.7);
 
 //Container sizes
 $form-container: 57%;
@@ -21,6 +22,7 @@ $lg-screen: 1024px;
 //Fonts
 $title-font-family: 'Gotham light';
 $text-font-family: 'Gotham italic';
+$gotham-bold: 'Gotham bold';
 
 @font-face {
   font-family: 'Gotham light';

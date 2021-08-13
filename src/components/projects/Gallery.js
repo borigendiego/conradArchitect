@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import Collapsible from 'react-collapsible';
 import {
     Link
@@ -27,22 +26,27 @@ const Gallery = (props) => {
 
     return (
         <>
-            <div className={'images-wrapper'}>
-                {projectsList.slice(0,3).map((project, index) =>
-                    <div
-                        key={index}
-                        className={'gallery-slide'}
-                    >
-                        <Link to={'/projects'}>
-                            <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
-                                 onClick={() => setSingleProject(index)}
-                            />
-                        </Link>
-                    </div>
-                )}
-            </div>
             {
-                projectsList.length > 3 &&
+                projectsList
+                    ? <div className={'images-wrapper'}>
+                        {projectsList.slice(0,9).map((project, index) =>
+                            <div
+                                key={index}
+                                className={'gallery-slide'}
+                            >
+                                <Link to={'/projects'}>
+                                    <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
+                                         onClick={() => setSingleProject(index)}
+                                    />
+                                </Link>
+                            </div>
+                        )}
+                    </div>
+                    : <h4>No projects to display</h4>
+            }
+
+            {
+                projectsList && projectsList.length > 9 &&
                 <Collapsible
                     trigger={
                         <h2
@@ -56,7 +60,7 @@ const Gallery = (props) => {
                 >
                     <div className={'more-images-wrapper'}>
                        {/* //TODO: check logic about index when select a project*/}
-                        {projectsList.slice(3,20).map((project, index) =>
+                        {projectsList.slice(9,20).map((project, index) =>
                             <div
                                 key={index}
                                 className={'gallery-slide more-slides'}
