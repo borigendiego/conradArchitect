@@ -7,7 +7,7 @@ export const CAROUSEL_IMAGES = [
     {
         id: 1,
         alt: 'First Image of carousel',
-        img: slideImage3
+        img: slideImage1
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const CAROUSEL_IMAGES = [
     {
         id: 3,
         alt: 'Third Image of carousel',
-        img: slideImage1
+        img: slideImage3
     },
     {
         id: 4,
