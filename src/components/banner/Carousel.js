@@ -17,7 +17,7 @@ const MyCarousel = () => {
             >
                 {
                     CAROUSEL_IMAGES.map(item => (
-                        <div>
+                        <div key={item.id}>
                             <img
                                 id={item.id}
                                 alt={item.alt}
