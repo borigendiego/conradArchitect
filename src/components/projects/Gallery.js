@@ -44,7 +44,6 @@ const Gallery = (props) => {
                     </div>
                     : <h4>No projects to display</h4>
             }
-
             {
                 projectsList && projectsList.length > 9 &&
                 <Collapsible
