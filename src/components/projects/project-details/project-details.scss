@@ -134,21 +134,26 @@ img {
   .project-details-container {
     background: linear-gradient(180deg, #E4E4E3 20%, #00ffff00 20%);
     padding: 15% 6%;
+    height: auto;
   }
 
   .grey-color-container { overflow: visible; }
 
   .project-details-wrapper {
-    height: 85vh;
+    height: 100%;
     padding-top: 5%;
   }
 
   .details-content {
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
 
-  .details-black-border { width: 100%; }
+  .details-black-border {
+    height: 110%;
+    width: 100%;
+  }
 
   .project-details-back-arrow {
     display: flex;
@@ -166,5 +171,5 @@ img {
 
   .ReactGridGallery_tile-viewport { height: 11vh !important; }
 
-  .gallery { height: 14rem }
+  .gallery { height: auto; }
 }
