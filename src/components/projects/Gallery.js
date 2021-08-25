@@ -24,6 +24,8 @@ const Gallery = (props) => {
             .catch(err => console.log('>>error', err))
     }, [addProjectList]);
 
+    const cleanBlankSpaces = (string) => string.replace(/\s+/g, "-");
+
     return (
         <>
             {
@@ -34,9 +36,12 @@ const Gallery = (props) => {
                                 key={index}
                                 className={'gallery-slide'}
                             >
-                                <Link to={'/projects'}>
-                                    <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
-                                         onClick={() => setSingleProject(index)}
+                                <Link to={`/projects/${cleanBlankSpaces(project.name)}`}>
+                                    <img
+                                        className={'gallery-image'}
+                                        alt={`Thumbnail of ${project.name}`}
+                                        src={project.main_image.url}
+                                        onClick={() => setSingleProject(index)}
                                     />
                                 </Link>
                             </div>
@@ -64,9 +69,15 @@ const Gallery = (props) => {
                                 key={index}
                                 className={'gallery-slide more-slides'}
                             >
-                                <Link to={'/projects'} onClick={() => setSingleProject(index + 3)}>
-                                    <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
-                                         onClick={() => setSingleProject(index)}
+                                <Link
+                                    to={`/projects/${cleanBlankSpaces(project.name)}`}
+                                    onClick={() => setSingleProject(index + 3)}
+                                >
+                                    <img
+                                        className={'gallery-image'}
+                                        alt={`Thumbnail of ${project.name}`}
+                                        src={project.main_image.url}
+                                        onClick={() => setSingleProject(index)}
                                     />
                                 </Link>
                             </div>

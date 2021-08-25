@@ -27,7 +27,7 @@ function App() {
                         <About />
                         <Contact />
                     </Route>
-                    <Route exact path={'/projects'}>
+                    <Route path={'/projects/:projectName'}>
                         <ProjectDetails />
                     </Route>
                     {

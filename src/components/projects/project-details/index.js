@@ -10,8 +10,7 @@ import {
     Link
 } from 'react-router-dom';
 
-const ProjectDetails = (props) => {
-    const { project } = props;
+const ProjectDetails = ({ project }) => {
 
     return (
         <div className={'project-details-container'}>
