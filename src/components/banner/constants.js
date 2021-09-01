@@ -1,7 +1,7 @@
 import slideImage1 from '../../assets/images/projects/DSC08584-min.jpg';
 import slideImage2 from '../../assets/images/projects/405-Dartmoor-Street.jpg';
 import slideImage3 from '../../assets/images/projects/Lopez Residence-9118.jpg';
-import slideImage4 from '../../assets/images/projects/143K5909.jpg';
+import slideImage4 from '../../assets/images/projects/395dartmoor-main-scaled.jpeg';
 
 export const CAROUSEL_IMAGES = [
     {

@@ -19,15 +19,11 @@ const ProjectDetails = ({ project }) => {
                     <span>&#8249; MAIN PAGE</span>
                 </Link>
                 <div className={'details-content'}>
-                    <div className={'grey-color-container'}>
-                        <div className={'image-container'}>
-                            <img
-                                alt={'main'}
-                                className={'image-grey'}
-                                src={project.main_image.url}
-                            />
-                        </div>
-                    </div>
+                    <img
+                        alt={'Project main'}
+                        className={'project-main-image'}
+                        src={project.main_image.url}
+                    />
                     <div className={'details-container'}>
                         <div>
                             <h1>{project.name}</h1>
