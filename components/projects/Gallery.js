@@ -10,7 +10,7 @@ import Link from 'next/link';
 // import { getProjectsList } from '../../public/redux/selectors';
 // import { addProjectList, setSingleProject } from '../../public/redux/actions';
 //css
-import './gallery.module.scss';
+import styles from './gallery.module.scss';
 //API
 import { getProjects, getTempProjects } from './API';
 
@@ -30,14 +30,14 @@ const Gallery = (props) => {
         <>
             {
                 !projectsList
-                    ? <div className={'images-wrapper'}>
+                    ? <div className={styles.images_wrapper}>
                         {getTempProjects().map((project, index) =>
                             <div
                                 key={index}
-                                className={'gallery-slide'}
+                                className={styles.slide}
                             >
                                 <Link href={'/projects'}>
-                                    <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
+                                    <img className={styles.image} alt={'as'} src={project.main_image.url}
                                          onClick={() => { console.log(">>DATA", project[index]) }}
                                     />
                                 </Link>
@@ -53,22 +53,22 @@ const Gallery = (props) => {
                     trigger={
                         <h2
                             onClick={() => {setIsExpanded(!isExpanded)}}
-                            className={'all-projects-cta'}
+                            className={styles.all_projects_cta}
                         >
                             {isExpanded ? 'SEE LESS >' : 'SEE ALL PROJECTS >'}
                         </h2>
                     }
                     classParentString={isExpanded ? 'expandedPanel' : ''}
                 >
-                    <div className={'more-images-wrapper'}>
+                    <div className={styles.more_images_wrapper}>
                        {/* //TODO: check logic about index when select a project*/}
                         {projectsList.slice(9,20).map((project, index) =>
                             <div
                                 key={index}
-                                className={'gallery-slide more-slides'}
+                                className={`${styles.slide} more-slides`}
                             >
                                 <Link to={'/projects'} onClick={() => setSingleProject(index + 3)}>
-                                    <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
+                                    <img className={styles.image} alt={'as'} src={project.main_image.url}
                                          onClick={() => setSingleProject(index)}
                                     />
                                 </Link>

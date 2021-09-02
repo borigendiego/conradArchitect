@@ -1,6 +1,6 @@
 @import '../../css/variables';
 
-.images-wrapper {
+.images_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -8,14 +8,14 @@
   transition:all 0.3s ease-out;
 }
 
-.more-images-wrapper {
+.more_images_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   transition:all 0.3s ease-out;
 }
 
-.gallery-slide {
+.slide {
   margin-bottom: 5%;
   height: 42vh;
   width: 30%;
@@ -26,21 +26,22 @@
     height: 44vh;
   }
 
-  .gallery-image {
+  .image {
     height: 100%;
     width: 100%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    //-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    //filter: grayscale(100%);
     transition: filter 1s;
+    cursor: pointer;
   }
 
-  .gallery-image:hover {
+  .image:hover {
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
   }
 }
 
-.all-projects-cta {
+.all_projects_cta {
   margin-top: 1.5rem;
   text-align: center;
   font-family: $title-font-family;
@@ -65,10 +66,10 @@
 
 
 @media (max-width: $xs-screen) {
-  .gallery-slide {
+  .slide {
     width: 100%;
 
-    .gallery-image {
+    .image {
       -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
       filter: grayscale(0%);
     }
