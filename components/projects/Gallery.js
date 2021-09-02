@@ -12,33 +12,33 @@ import Link from 'next/link';
 //css
 import './gallery.module.scss';
 //API
-import { getProjects } from './API';
+import { getProjects, getTempProjects } from './API';
 
 const Gallery = (props) => {
     const { addProjectList, setSingleProject, projectsList } = props;
     const [isExpanded, setIsExpanded] = useState(false);
 
-    useEffect(() => {
+    /*useEffect(() => {
         getProjects()
             .then(res => {
                 return addProjectList(res);
             })
             .catch(err => console.log('>>error', err))
-    }, [addProjectList]);
+    }, [addProjectList]);*/
 
     return (
         <>
             {
-                projectsList
+                !projectsList
                     ? <div className={'images-wrapper'}>
-                        {projectsList.slice(0,9).map((project, index) =>
+                        {getTempProjects().map((project, index) =>
                             <div
                                 key={index}
                                 className={'gallery-slide'}
                             >
                                 <Link href={'/projects'}>
                                     <img className={'gallery-image'} alt={'as'} src={project.main_image.url}
-                                         onClick={() => setSingleProject(index)}
+                                         onClick={() => { console.log(">>DATA", project[index]) }}
                                     />
                                 </Link>
                             </div>

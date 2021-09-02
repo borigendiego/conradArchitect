@@ -4,10 +4,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 //images
 import { CAROUSEL_IMAGES } from './constants';
+//css
+import style from './banner.module.scss';
 
 const MyCarousel = () => {
     return (
-        <div className={'carousel'}>
+        <div className={style.carousel}>
             <Carousel
                 autoPlay={true}
                 infiniteLoop={true}

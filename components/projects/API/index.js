@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { PROJECTS_DATA } from './constants';
 
 const getProjects = () => {
     return (
@@ -15,6 +16,17 @@ const getProjects = () => {
     )
 };
 
+//TODO: This will be removed
+const getTempProjects = () => {
+    return PROJECTS_DATA.map(element =>
+        ({
+            ...element.acf,
+            gallery: element.gallery_images,
+        })
+    );
+}
+
 export {
     getProjects,
+    getTempProjects,
 }
