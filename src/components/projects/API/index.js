@@ -21,6 +21,24 @@ const getProjects = () => {
     )
 };
 
+const getHomeBannerImages = () => {
+    return (
+        axios.get(`${process.env.REACT_APP_API_URL}/home`)
+            .then((response) => {
+                return response.data[0].gallery_images.map((element, index) => (
+                    {
+                        id: index + 1,
+                        alt: `Project ${index} main view`,
+                        img: element
+                    }
+                ));
+
+            })
+            .catch(err => console.log('>>error', err))
+    )
+}
+
 export {
     getProjects,
+    getHomeBannerImages
 }
