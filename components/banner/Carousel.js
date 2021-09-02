@@ -19,7 +19,7 @@ const MyCarousel = () => {
             >
                 {
                     CAROUSEL_IMAGES.map(item => (
-                        <div>
+                        <div className={style.carousel_slider}>
                             <img
                                 id={item.id}
                                 alt={item.alt}
