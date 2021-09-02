@@ -1,0 +1,28 @@
+@import "../../css/variables";
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.gray_background {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $sections-background-color;
+}
+
+.content_container {
+  border: Rem(1.5px) solid;
+  margin: Rem(20px) 0;
+  position: relative;
+}
+
+.content {
+  width: 95%;
+  margin: auto;
+}

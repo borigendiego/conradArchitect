@@ -1,0 +1,48 @@
+@import '../../css/variables';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+
+  .logo {
+    object-fit: contain;
+  }
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 40%;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: $white-color;
+    font-size: $links-and-cta-font-size;
+  }
+
+  li { font-family: $title-font-family; }
+
+  li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.4s;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: $xs-screen) {
+  #big-screen-menu {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .logo {
+    margin-top: 30%;
+  }
+}

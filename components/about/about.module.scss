@@ -1,0 +1,130 @@
+@import '../../css/variables.scss';
+@import '../../css/helpers.scss';
+
+.tile_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $sections-background-color;
+  padding-top: 10%;
+}
+
+.title { margin-bottom: 5%; }
+
+.container { padding: 2% 11%; }
+
+.team_tile {
+  @include team_tile_container;
+  padding: 0 8%;
+
+  .team_picture {
+    height: 40vh;
+    width: 32vw;
+  }
+
+  .team_wrapper {
+    margin: 3% 0;
+
+    .text_wrapper {
+      border-top: 2px solid $basic-font-color;
+      border-bottom: 2px solid $basic-font-color;
+      padding: 4% 0;
+      display: flex;
+
+      .paragraphs {
+        width: 48%;
+        margin-right: 2%;
+      }
+
+      .quote_container {
+        width: 48%;
+        padding-top: 10%;
+        margin-left: 2%;
+
+        .quote {
+          font-weight: bold;
+        }
+
+        .quote_name {
+          font-family: $text-font-family;
+        }
+      }
+    }
+
+    h2 { margin: 10% 0; }
+
+    p { margin-bottom: 5%}
+  }
+}
+
+.member_tile {
+  width: 31%;
+  padding: 0 5%;
+  margin-bottom: 30%;
+
+  img { height: 13rem; width: 100%; }
+
+  .tile_text_wrapper {
+    margin: 10% 0 0 0;
+    width: 100%;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .tile_link {
+    margin: 6% 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+
+    &:hover {
+      transition: 0.35s;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.team_link { margin-bottom: 2%; }
+
+.full_team { margin: initial }
+
+@media (min-width: $md-screen) {
+  .container {
+    padding: 5% 11%;
+  }
+
+  .team_tile:nth-child(2) {
+    .text_wrapper, .tile_link {
+      text-align: center;
+    }
+  }
+
+  .team_tile:nth-child(3) {
+    .text_wrapper, .tile_link { text-align: center; }
+  }
+
+  .team_tile {
+    .team_wrapper {
+      h2 { margin: 5% 0; }
+    }
+  }
+
+  .member_tile {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .full_team { margin: 20% 0 }
+  .tile_container { padding-top: 10% }
+  .member_tile { width: 100%; }
+  .team_tile {
+    background: linear-gradient(0, #ffffff 75%, #00ffff00 50%);
+    padding: 0 10%;
+
+    .team_picture {
+      height: 26vh;
+      width: 50vw;
+    }
+  }
+}

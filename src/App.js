@@ -12,7 +12,7 @@ import Contact from './components/contact';
 import ProjectDetails from './components/projects/project-details';
 import Profile from './components/about/tile/profile';
 //css
-import './css/global-styles.scss';
+import '../css/global-styles.scss';
 //Constants
 import { MEMBERS_PROFILES } from './constants';
 
