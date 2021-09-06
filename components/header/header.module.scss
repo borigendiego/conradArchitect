@@ -33,8 +33,10 @@
   }
 }
 
+#bigScreenMenu{}
+
 @media (max-width: $xs-screen) {
-  #big-screen-menu {
+  #bigScreenMenu {
     display: none;
   }
 

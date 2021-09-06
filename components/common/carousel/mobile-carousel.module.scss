@@ -1,9 +1,17 @@
 @import '../../../css/variables';
 
 .container { display: none; }
+.mobile_carousel_container{}
+.sliders{}
+.about-paragraphs{}
+.about-quote{}
+.arrow{}
+.back{}
+.slider-wrapper{}
+.next{}
 
 @media (max-width: $md-screen) {
-  .mobile-carousel_container {
+  .container {
     display: initial;
     padding: 5% 0;
     position: relative;
@@ -12,9 +20,22 @@
     z-index: 2;
   }
 
-  .sliders { height: 100% }
+  .mobile_carousel_container {
+    display: initial;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 
-  .about-paragraphs ,.about-quote { display: none; }
+  .sliders {
+    height: 100%;
+  }
+
+  .slider_wrapper {
+    height: 100%;
+  }
+
+  .paragraphs ,.quote_container { display: none; }
 
   .arrow {
     background: none;
@@ -31,9 +52,11 @@
   .back {
     transform: rotate(180deg);
     left: 0;
+    bottom: 3.5%;
   }
 
   .next { right: 0; }
 
   .arrow, .slider-wrapper:focus { outline: none; }
+
 }

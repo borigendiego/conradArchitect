@@ -20,14 +20,14 @@ const MyCarousel = ({ slides }) => {
                 naturalSlideWidth={200}
                 naturalSlideHeight={110}
                 totalSlides={slides.length}
-                className={'carousel-container'}
+                className={styles.mobile_carousel_container}
             >
-                <div className={'sliders'}>
-                    <ButtonBack className={'arrow back'}>
+                <div className={styles.sliders}>
+                    <ButtonBack className={`${styles.arrow} ${styles.back}`}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonBack>
                     <Slider
-                        className={'slider-wrapper'}
+                        className={styles.slider_wrapper}
                     >
                         {
                             slides.map((item, index) =>
@@ -37,7 +37,7 @@ const MyCarousel = ({ slides }) => {
                             )
                         }
                     </Slider>
-                    <ButtonNext className={'arrow next'}>
+                    <ButtonNext className={`${styles.arrow} ${styles.next}`}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonNext>
                 </div>

@@ -1,13 +1,13 @@
 @import '../../../css/variables';
 
-#menuToggle {
+.menuToggle {
   display: none;
 }
 
 
 //TODO: Check all the px values and change for % or em
 @media (max-width: $xs-screen) {
-  #menuToggle
+  .menuToggle
   {
     display: block;
     position: relative;
@@ -20,7 +20,7 @@
     user-select: none;
   }
 
-  #menuToggle a
+  .menuToggle a
   {
     text-decoration: none;
     color: #232323;
@@ -29,7 +29,7 @@
   }
 
 
-  #menuToggle input
+  .menuToggle input
   {
     display: block;
     width: 40px;
@@ -48,7 +48,7 @@
   /*
    * Hamburger menu
    */
-  #menuToggle span
+  .menuToggle span
   {
     background: #cdcdcd;
     display: block;
@@ -68,12 +68,12 @@
     opacity 0.55s ease;
   }
 
-  #menuToggle span:first-child
+  .menuToggle span:first-child
   {
     transform-origin: 0 0;
   }
 
-  #menuToggle span:nth-last-child(2)
+  .menuToggle span:nth-last-child(2)
   {
     transform-origin: 0 100%;
   }
@@ -82,7 +82,7 @@
    * Transform all the slices of hamburger
    * into a crossmark.
    */
-  #menuToggle input:checked ~ span
+  .menuToggle input:checked ~ span
   {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
@@ -92,7 +92,7 @@
   /*
    * Hide the middle line one.
    */
-  #menuToggle input:checked ~ span:nth-last-child(3)
+  .menuToggle input:checked ~ span:nth-last-child(3)
   {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
@@ -101,12 +101,12 @@
   /*
    * Rotate line direction
    */
-  #menuToggle input:checked ~ span:nth-last-child(2)
+  .menuToggle input:checked ~ span:nth-last-child(2)
   {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
-  #menu
+  .menu
   {
     position: absolute;
     width: 0;
@@ -121,7 +121,7 @@
     transition: all 500ms cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
-  #menu li
+  .menu li
   {
     padding: 5% 0;
     font-size: clamp(100%, 5vw, 24px);
@@ -133,7 +133,7 @@
   /*
    * Make slide came from right
    */
-  #menuToggle input:checked ~ #menu
+  .menuToggle input:checked ~ .menu
   {
     width: 80vw;
     height: 50vh;
