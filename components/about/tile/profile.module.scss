@@ -37,39 +37,32 @@
     z-index: 2;
     position: relative;
   }
+  &:hover {
+    cursor: pointer;
+  }
 }
 .right { transform: rotate(180deg); }
 
-.backX_link {
+.back_link {
   position: absolute;
   top: 2%;
   right: 2%;
   height: 7%;
   width: 7%;
-
-  .backX {
-    position: relative;
-    z-index: 2;
-    object-fit: initial;
-  }
-}
-
-.description-wrapper {
-  p { margin: 10px 0 }
+  display: flex;
+  &:hover { cursor: pointer; }
 }
 
 .description {
   overflow: scroll;
+  p { margin: 10px 0 }
 }
 
 @media (max-width: $md-screen) {
   .description { display: none }
-  .backX_link {
-    position: absolute;
+  .back_link {
     top: 10px;
     right: 4%;
-    height: 4em;
-    width: 9%;
   }
 
   .arrow_link.right { left: 89%; }
@@ -104,5 +97,4 @@
 
     .name { margin: 0 0 2% 0; }
   }
-
 }

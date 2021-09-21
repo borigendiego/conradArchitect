@@ -1,54 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import Collapsible from 'react-collapsible';
-// import {
-//     Link
-// } from 'react-router-dom';
 import Link from 'next/link';
-
-//Redux
-// import { connect } from 'react-redux';
-// import { getProjectsList } from '../../public/redux/selectors';
-// import { addProjectList, setSingleProject } from '../../public/redux/actions';
+import AppContext from '../AppContext';
 //css
 import styles from './gallery.module.scss';
-//API
-import { getProjects, getTempProjects } from './API';
 
-const Gallery = (props) => {
-    const { addProjectList, setSingleProject, projectsList } = props;
+const Gallery = () => {
+    const { projectsData } = useContext(AppContext);
+
     const [isExpanded, setIsExpanded] = useState(false);
-
-    /*useEffect(() => {
-        getProjects()
-            .then(res => {
-                return addProjectList(res);
-            })
-            .catch(err => console.log('>>error', err))
-    }, [addProjectList]);*/
+    const cleanBlankSpaces = (string) => string.replace(/\s+/g, '-');
 
     return (
         <>
             {
-                !projectsList
+                projectsData && projectsData.length > 0
                     ? <div className={styles.images_wrapper}>
-                        {getTempProjects().map((project, index) =>
+                        {projectsData.map((project, index) =>
                             <div
                                 key={index}
                                 className={styles.slide}
                             >
-                                <Link href={'/projects'}>
-                                    <img className={styles.image} alt={'as'} src={project.main_image.url}
-                                         onClick={() => { console.log(">>DATA", project[index]) }}
-                                    />
+                                <Link
+                                    href={{
+                                        pathname: `/projects/${cleanBlankSpaces(project.name)}`,
+                                    }}
+                                >
+                                    <img className={styles.image} alt={'Project preview'} src={project.main_image.url} />
                                 </Link>
                             </div>
                         )}
                     </div>
                     : <h4>No projects to display</h4>
             }
-
             {
-                projectsList && projectsList.length > 9 &&
+                projectsData && projectsData.length > 9 &&
                 <Collapsible
                     trigger={
                         <h2
@@ -62,16 +48,16 @@ const Gallery = (props) => {
                 >
                     <div className={styles.more_images_wrapper}>
                        {/* //TODO: check logic about index when select a project*/}
-                        {projectsList.slice(9,20).map((project, index) =>
+                        {projectsData.slice(9,20).map((project, index) =>
                             <div
                                 key={index}
                                 className={`${styles.slide} more-slides`}
                             >
-                                <Link to={'/projects'} onClick={() => setSingleProject(index + 3)}>
+                                {/*<Link to={'/projects'} onClick={() => setSingleProject(index + 3)}>
                                     <img className={styles.image} alt={'as'} src={project.main_image.url}
                                          onClick={() => setSingleProject(index)}
                                     />
-                                </Link>
+                                </Link>*/}
                             </div>
                         )}
                     </div>
@@ -82,17 +68,3 @@ const Gallery = (props) => {
 };
 
 export default Gallery;
-
-// const mapStateToProps = (state) => ({
-//     projectsList: getProjectsList(state),
-// });
-//
-// const mapDispatchToProps = (dispatch) => ({
-//     addProjectList: (values) => dispatch(addProjectList(values)),
-//     setSingleProject: (projectId) => dispatch(setSingleProject(projectId)),
-// });
-//
-// export default connect(
-//     mapStateToProps,
-//     mapDispatchToProps
-// )(Gallery)

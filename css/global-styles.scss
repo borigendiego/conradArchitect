@@ -43,6 +43,7 @@ a {
 
   &:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -74,4 +75,31 @@ img {
   @media (max-width: $xs-screen) {
     width: 100vw;
   }
+}
+
+//Mobile carousel styles
+//TODO: Move mobile carousel to a new component
+.carousel__inner-slide {
+  height: auto;
+  display: contents;
+}
+
+/***Projects details gallery styles***/
+.ReactGridGallery_tile {
+  width: 30%;
+}
+
+.ReactGridGallery_tile-viewport {
+  height: Rem(120px) !important;
+  width: 100% !important;
+
+  img {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: $xs-screen) {
+  .ReactGridGallery_tile-viewport { height: 11vh !important; }
 }

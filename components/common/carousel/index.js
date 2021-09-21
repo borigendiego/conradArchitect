@@ -20,24 +20,23 @@ const MyCarousel = ({ slides }) => {
                 naturalSlideWidth={200}
                 naturalSlideHeight={110}
                 totalSlides={slides.length}
-                className={'carousel-container'}
             >
-                <div className={'sliders'}>
-                    <ButtonBack className={'arrow back'}>
+                <Slider
+                    className={styles.slider_wrapper}
+                >
+                    {
+                        slides.map((item, index) =>
+                            <Slide key={`slide-${index}`} index={index}>
+                                {item}
+                            </Slide>
+                        )
+                    }
+                </Slider>
+                <div className={styles.arrows_container}>
+                    <ButtonBack className={`${styles.arrow} ${styles.back}`}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonBack>
-                    <Slider
-                        className={'slider-wrapper'}
-                    >
-                        {
-                            slides.map((item, index) =>
-                                <Slide key={`slide-${index}`} index={index}>
-                                    {item}
-                                </Slide>
-                            )
-                        }
-                    </Slider>
-                    <ButtonNext className={'arrow next'}>
+                    <ButtonNext className={`${styles.arrow} ${styles.next}`}>
                         <img alt={'back-arrow'} src={Arrow} />
                     </ButtonNext>
                 </div>

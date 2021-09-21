@@ -8,11 +8,8 @@ import Tile from './tile';
 //Constant
 import {
     MEMBERS,
-    ABOUT_PARAGRAPH_FOUR,
-    ABOUT_PARAGRAPH_ONE,
-    ABOUT_PARAGRAPH_THREE,
-    ABOUT_PARAGRAPH_TWO,
     TEAM_CAROUSEL_SLIDES,
+    ABOUT_TEXT,
 } from './constants';
 //Images
 import team from '../../public/assets/images/conrad-architect-team-min.jpeg';
@@ -32,12 +29,12 @@ const About = () => {
                         <div className={styles.text_wrapper}>
                             <MobileCarousel slides={TEAM_CAROUSEL_SLIDES} />
                             <div className={styles.paragraphs}>
-                                <p>{ABOUT_PARAGRAPH_ONE}</p>
-                                <p>{ABOUT_PARAGRAPH_TWO}</p>
-                                <p>{ABOUT_PARAGRAPH_THREE}</p>
+                                <p>{ABOUT_TEXT[0]}</p>
+                                <p>{ABOUT_TEXT[1]}</p>
+                                <p>{ABOUT_TEXT[2]}</p>
                             </div>
                             <div className={styles.quote_container}>
-                                <p className={styles.quote}>&#8220;{ABOUT_PARAGRAPH_FOUR}&#8221;</p>
+                                <p className={styles.quote}>&#8220;{ABOUT_TEXT[3]}&#8221;</p>
                                 <span className={styles.quote_name}>-James Conrad, Founder</span>
                             </div>
                         </div>
