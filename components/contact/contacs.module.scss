@@ -1,0 +1,29 @@
+@import "../../css/variables";
+
+.container {
+  background-color: $sections-background-color;
+  margin: 1% 0;
+
+  .item {
+    text-align: center;
+    font-size: clamp(100%, 2vw, 1.5rem);
+    padding: 1% 0;
+  }
+}
+
+.link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.4s;
+  text-decoration: underline;
+}
+
+.contact-black-border {
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border: solid;
+  margin: auto;
+}

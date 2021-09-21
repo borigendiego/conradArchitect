@@ -1,0 +1,64 @@
+@import '../../css/variables';
+
+.images_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5%;
+  transition:all 0.3s ease-out;
+}
+
+.more_images_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition:all 0.3s ease-out;
+}
+
+.slide {
+  margin-bottom: 5%;
+  height: 42vh;
+  width: 30%;
+  transition: all 500ms;
+
+  &:hover {
+    width: 37%;
+    height: 46vh;
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+    transition: filter 1s;
+    cursor: pointer;
+  }
+}
+
+.all_projects_cta {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-family: $title-font-family;
+  font-size: $links-and-cta-font-size;
+  margin-bottom: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.gallery-overlay-helper {
+  width: 90%;
+  margin: auto;
+}
+
+.expandedPanel {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (max-width: $xs-screen) {
+  .slide {
+    width: 100%;
+  }
+}

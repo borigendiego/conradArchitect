@@ -1,0 +1,46 @@
+@import 'helpers';
+
+//Colors
+$sections-background-color: #e4e4e4;
+$mobile-menu-background-color: #e4e4e4e6;
+$sections-border-color: #000;
+$white-color: #ffff;
+$basic-font-color: rgba(0, 0, 0, 0.7);
+
+//Container sizes
+$form-container: 57%;
+$large-section-container: 100vw;
+
+//Text sizes
+$links-and-cta-font-size: clamp(100%, 1.1em, 27px);
+
+//Devices sizes
+$xs-screen: 450px;
+$md-screen: 700px;
+$lg-screen: 1024px;
+
+//Fonts
+$title-font-family: 'Gotham light';
+$text-font-family: 'Gotham italic';
+$gotham-bold: 'Gotham bold';
+
+@font-face {
+  font-family: 'Gotham light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/Gotham-Light.otf');
+}
+
+@font-face {
+  font-family: 'Gotham bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../src/assets/fonts/Gotham-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Gotham italic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/Gotham-BookIta.otf');
+}

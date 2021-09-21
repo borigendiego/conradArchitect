@@ -1,5 +1,5 @@
-@import '../../../css/variables';
-@import '../../../css/helpers';
+@import "../../../../css/variables";
+@import "../../../../css/helpers";
 
 .project-details-container {
   background: linear-gradient(90deg, $sections-background-color 32%, #00ffff00 32%);
@@ -19,10 +19,32 @@
   margin-left: auto;
 }
 
+.grey-color-container {
+  width: 60%;
+  overflow: hidden;
+}
+
+.image-container {
+  position:relative;
+  display:inline-block;
+  z-index: 1;
+}
 .image-grey {
   display:block;
   -webkit-filter: grayscale(100%);
 }
+
+.image-container:after {
+  position:absolute;
+  content: "";
+  top:0;
+  left:50%;
+  width:50%;
+  height: 100%;
+  background-position: top right;
+  background-size: cover;
+}
+
 
 .details-content {
   display: flex;
@@ -108,28 +130,25 @@ img {
   z-index: 1;
 }
 
-.project-main-image {
-  width: 60%;
-  z-index: 1;
-}
-
-@media (max-width: $md-screen) {
+@media (max-width: $xs-screen) {
   .project-details-container {
     background: linear-gradient(180deg, #E4E4E3 20%, #00ffff00 20%);
     padding: 15% 6%;
-    height: auto;
+  }
+
+  .grey-color-container { overflow: visible; }
+
+  .project-details-wrapper {
+    height: 85vh;
+    padding-top: 5%;
   }
 
   .details-content {
     flex-direction: column;
     align-items: center;
-    height: auto;
   }
 
-  .details-black-border {
-    height: 110%;
-    width: 100%;
-  }
+  .details-black-border { width: 100%; }
 
   .project-details-back-arrow {
     display: flex;
@@ -141,14 +160,11 @@ img {
 
   .details-container { width: 90%; }
 
+  .image-container { width: 100%; }
+
   .image-grey { -webkit-filter: grayscale(0); }
 
   .ReactGridGallery_tile-viewport { height: 11vh !important; }
 
-  .gallery { height: auto; }
-
-  .project-main-image {
-    width: 100%;
-    padding: 2%;
-  }
+  .gallery { height: 14rem }
 }

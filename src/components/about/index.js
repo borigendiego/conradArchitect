@@ -1,6 +1,5 @@
 import React from 'react';
 //Styles
-import './about.scss';
 //Components
 import SectionLayout from '../common/SectionLayout';
 import MobileCarousel from '../common/carousel';
