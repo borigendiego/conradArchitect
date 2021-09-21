@@ -12,7 +12,7 @@ const Header = () => {
         <nav role={'navigation'}>
             <div className={styles.container}>
                 <img alt={'logo'} className={styles.logo} src={Logo} />
-                <ul id={'big-screen-menu'} className={styles.nav}>
+                <ul id={styles.bigScreenMenu} className={styles.nav}>
                     {
                         MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
                     }

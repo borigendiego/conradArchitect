@@ -7,7 +7,7 @@ const SectionLayout = (props) => {
 
     return (
         <div className={'section-container'} id={sectionId}>
-            <h1>{sectionTitle}</h1>
+            <h1 className={styles.title}>{sectionTitle}</h1>
             <div className={styles.wrapper}>
                 <div className={styles.gray_background} />
                 <div className={styles.content_container}>

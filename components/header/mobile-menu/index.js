@@ -6,12 +6,12 @@ const MobileMenu = (props) => {
     const { menuItems } = props;
 
     return (
-        <div id={styles.menuToggle}>
+        <div className={styles.menuToggle}>
             <input type="checkbox" />
             <span />
             <span />
             <span />
-            <ul id={'menu'}>
+            <ul className={styles.menu}>
                 {
                     menuItems.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
                 }
