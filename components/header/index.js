@@ -14,7 +14,9 @@ const Header = () => {
                 <img alt={'logo'} className={styles.logo} src={Logo} />
                 <ul id={styles.bigScreenMenu} className={styles.nav}>
                     {
-                        MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
+                        MENU_LINKS.map((link,index) =>
+                            <a key={index} href={link.linkTo}><li>{link.label}</li></a>
+                        )
                     }
                 </ul>
                 <MobileMenu menuItems={MENU_LINKS} />

@@ -2,8 +2,16 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../about.module.scss';
 
-const Tile = (props) => {
-    const { key, name, lastName, rol, profilePicture, linkToProfile, id } = props.staffData;
+const Tile = ({ staffData }) => {
+    const {
+        key,
+        name,
+        lastName,
+        rol,
+        profilePicture,
+        linkToProfile,
+        id
+    } = staffData;
 
     return (
         <div id={`order-${id}`} className={`${styles.team_tile} ${styles.member_tile}`}>
