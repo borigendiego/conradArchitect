@@ -1,3 +1,4 @@
+import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
@@ -24,7 +25,7 @@ export default class MyDocument extends Document {
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
                     <script
                         async
-                        src={`https://www.googletagmanager.com/gtag/js?id=G-1DRJQT6GH1`}
+                        src="https://www.googletagmanager.com/gtag/js?id=G-R2MD4BEPKQ"
                     />
                     <script
                         dangerouslySetInnerHTML={{
@@ -32,7 +33,7 @@ export default class MyDocument extends Document {
                                 window.dataLayer = window.dataLayer || [];
                                 function gtag(){dataLayer.push(arguments);}
                                 gtag('js', new Date());
-                                gtag('config', 'G-1DRJQT6GH1', {
+                                gtag('config', 'G-R2MD4BEPKQ', {
                                   page_path: window.location.pathname,
                                 });
                               `,
