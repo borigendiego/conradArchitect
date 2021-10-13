@@ -102,4 +102,15 @@ img {
 
 @media (max-width: $xs-screen) {
   .ReactGridGallery_tile-viewport { height: 11vh !important; }
+
+  h5 {
+    font-family: $gotham-bold;
+    font-size: clamp(20px, 3vw, 18px);
+  }
+
+  h6 {
+    font-family: $text-font-family;
+    font-size: clamp(18px, 3vw, 18px);
+    font-weight: 400;
+  }
 }

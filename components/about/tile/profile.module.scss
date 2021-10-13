@@ -62,7 +62,12 @@
   .description { display: none }
   .back_link {
     top: 10px;
-    right: 4%;
+    right: 10%;
+  }
+
+  .back {
+    width: 130%;
+    margin-left: 25%;
   }
 
   .arrow_link.right { left: 89%; }
