@@ -1,1 +1,0 @@
-{"ast":null,"code":"var MENU_LINKS = [{\n  label: 'HOME',\n  linkTo: '#HOME'\n}, {\n  label: 'PROJECTS',\n  linkTo: '#PROJECTS'\n}, {\n  label: 'ABOUT',\n  linkTo: '#ABOUT'\n}, {\n  label: 'CONTACT',\n  linkTo: '#CONTACT'\n}];\nexport { MENU_LINKS };","map":null,"metadata":{},"sourceType":"module"}

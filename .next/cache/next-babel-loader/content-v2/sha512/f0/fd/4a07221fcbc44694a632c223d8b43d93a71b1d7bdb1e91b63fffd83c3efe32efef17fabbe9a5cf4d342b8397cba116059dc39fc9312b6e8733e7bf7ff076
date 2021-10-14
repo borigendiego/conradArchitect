@@ -1,1 +1,0 @@
-{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\n\n//TODO: Add components\nvar Project = function Project(_ref) {\n  var data = _ref.data;\n  return __jsx(\"div\", null, __jsx(\"h1\", null, \"Proyect\"));\n};\n\nexport var __N_SSG = true;\nexport default Project;","map":null,"metadata":{},"sourceType":"module"}
