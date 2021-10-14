@@ -122,8 +122,11 @@
 }
 
 @media (max-width: $xs-screen) {
-  .full_team { margin: 20% 0 }
-  .tile_container { padding-top: 10% }
+  .full_team { margin: 20% 0; }
+  .tile_container { padding-top: 10%; }
+  .tile_container > :nth-child(1) { order: 3; }
+  .tile_container > :nth-child(2) { order: 1; }
+  .tile_container > :nth-child(3) { order: 2; }
   .member_tile { width: 100%; }
   .team_tile {
     background: linear-gradient(0, #ffffff 75%, #00ffff00 50%);

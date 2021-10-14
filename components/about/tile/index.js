@@ -14,7 +14,10 @@ const Tile = ({ staffData }) => {
     } = staffData;
 
     return (
-        <div id={`order-${id}`} className={`${styles.team_tile} ${styles.member_tile}`}>
+        <div
+            id={`order-${id}`}
+            className={`${styles.team_tile} ${styles.member_tile}`}
+        >
             <img alt={`${key}-profile`} src={profilePicture}/>
             <div className={styles.tile_text_wrapper}>
                 <h5>{`${name} ${lastName}`}</h5>
