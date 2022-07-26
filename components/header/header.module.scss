@@ -3,12 +3,16 @@
 #bigScreenMenu{}
 
 .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 30px 60px;
+  height: 100%;
 
   .logo {
     object-fit: contain;
+    max-width: 300px;
+    height: fit-content;
   }
 }
 
@@ -49,10 +53,12 @@
   }
 
   .container {
-    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo {
-    margin-top: 15%;
+    max-width: 300px;
+    object-fit: contain;
   }
 }

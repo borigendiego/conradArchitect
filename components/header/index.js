@@ -9,7 +9,7 @@ import MobileMenu from './mobile-menu';
 
 const Header = () => {
     return (
-        <nav role={'navigation'}>
+        <nav role={'navigation'} style={{height: '100%'}}>
             <div className={styles.container}>
                 <img alt={'logo'} className={styles.logo} src={Logo} />
                 <ul id={styles.bigScreenMenu} className={styles.nav}>
