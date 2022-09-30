@@ -33,11 +33,12 @@
     background-position: 0 100%;
     background-size: 0 2px;
     background-repeat: no-repeat;
+    transition: ease 0.4s;
+
   }
 
   li:hover {
     cursor: pointer;
-    transition: 0.4s;
     background-position: 100% 100%;
     background-size: 100% 2px;
   }
