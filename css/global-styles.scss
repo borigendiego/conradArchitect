@@ -77,6 +77,23 @@ img {
   }
 }
 
+.copyright {
+  background-color: #FFF;
+  text-align: center;
+  padding: 0 0 1em 0;
+
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $gotham-bold;
+    color: #000;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
 //Mobile carousel styles
 //TODO: Move mobile carousel to a new component
 .carousel__inner-slide {
