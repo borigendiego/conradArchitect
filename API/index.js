@@ -4,13 +4,13 @@ const cleanBlankSpaces = (string) => string.replace(/\s+/g, '-');
 
 const getHomeBannerImages = () => {
     return (
-        axios.get(`https://wp.conradarchitect.com/wp-json/wp/v2/home`)
+        axios.get(`https://wp.conradarchitect.com/wp-json/wp/v2/hero`)
             .then((response) => {
-                return response.data[0].gallery_images.map((element, index) => (
+                return response.data[0].acf.foto_gallery.map((element, index) => (
                     {
                         id: index + 1,
                         alt: `Project ${index} main view`,
-                        img: element
+                        img: element.full_image_url
                     }
                 ));
 
