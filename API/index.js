@@ -26,7 +26,7 @@ const getProjects = () => {
             return response.data.map((project, index) =>
                 ({
                     ...project.acf,
-                    gallery: project.gallery_images,
+                    gallery: project.acf.photo_gallery,
                     id: cleanBlankSpaces(project.acf.name),
                     projectIndex: index,
                 })
