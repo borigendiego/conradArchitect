@@ -23,7 +23,7 @@
 
 .link:hover {
   cursor: pointer;
-  transition: 0.4s;
+  transition: all 1000ms;
   background-position: 100% 100%;
   background-size: 100% 2px;
 }

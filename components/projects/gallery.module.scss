@@ -19,7 +19,7 @@
   margin-bottom: 5%;
   height: 42vh;
   width: 30%;
-  transition: all 500ms;
+  transition: all 800ms;
 
   &:hover {
     width: 37%;
@@ -60,5 +60,11 @@
 @media (max-width: $xs-screen) {
   .slide {
     width: 100%;
+    transition: none;
+
+    &:hover {
+      width: 100%;
+      height: 42vh;
+    }
   }
 }

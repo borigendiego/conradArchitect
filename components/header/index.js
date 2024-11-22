@@ -5,8 +5,7 @@ import styles from './header.module.scss';
 //images
 import Logo from '../../public/assets/images/jim-conrad-logo-light.png';
 //Components
-import MobileMenu from './mobile-menu';
-import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
+import {motion} from "framer-motion/dist/framer-motion";
 
 
 const Header = () => {
@@ -48,7 +47,6 @@ const Header = () => {
                         )
                     }
                 </motion.ul>
-                <MobileMenu menuItems={MENU_LINKS} />
             </div>
         </nav>
     )

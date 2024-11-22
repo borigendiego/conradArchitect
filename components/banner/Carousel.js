@@ -24,9 +24,11 @@ const MyCarousel = () => {
                 <Carousel
                     autoPlay={true}
                     infiniteLoop={true}
+                    interval={4500}
                     showThumbs={false}
                     showArrows={false}
                     showStatus={false}
+                    transitionTime={1000}
                 >
                     {
                         carouselImages.map((item) => (

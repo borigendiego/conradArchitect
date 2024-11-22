@@ -79,11 +79,11 @@
     background-position: 0 100%;
     background-size: 0 2px;
     background-repeat: no-repeat;
-    padding-bottom:2px;
-    transition: ease 0.4s;
+    padding-bottom: 2px;
+    transition: all 1000ms;
 
     &:hover {
-      transition: 0.35s;
+      transition: 0.5s;
       text-decoration: none;
       background-position: 100% 100%;
       background-size: 100% 2px;

@@ -5,11 +5,14 @@ import Projects from '../components/projects';
 import About from '../components/about';
 import Contact from '../components/contact';
 import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
+import MobileMenu from '../components/header/mobile-menu';
+import { MENU_LINKS } from '../components/header/constants';
 
 
 const App = () => {
     return (
         <div className={'App'}>
+            <MobileMenu menuItems={MENU_LINKS} />
             <BannerSection />
             <Projects />
             <About />
